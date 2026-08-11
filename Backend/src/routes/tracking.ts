@@ -9,7 +9,7 @@ function getClientIP(req: Request): string {
   const forwarded = req.headers["x-forwarded-for"];
   if (typeof forwarded === "string") return forwarded.split(",")[0].trim();
   if (Array.isArray(forwarded)) return forwarded[0].trim();
-  return req.socket.remoteAddress || "0.0.0.0";
+  return req.socket?.remoteAddress || req.ip || "0.0.0.0";
 }
 
 function parseUA(userAgent: string) {
@@ -28,6 +28,14 @@ function parseUA(userAgent: string) {
   }
 }
 
+interface GeoData {
+  error?: boolean;
+  region?: string;
+  city?: string;
+  country_name?: string;
+  org?: string;
+}
+
 // Track visitor (called from frontend on page load)
 router.post("/track", async (req: Request, res: Response) => {
   try {
@@ -42,7 +50,7 @@ router.post("/track", async (req: Request, res: Response) => {
     if (!region && ip && ip !== "127.0.0.1" && ip !== "::1") {
       try {
         const geoRes = await fetch(`https://ipapi.co/${ip}/json/`);
-        const geoData = await geoRes.json();
+        const geoData = (await geoRes.json()) as GeoData;
         if (!geoData.error) {
           geo = {
             region: geoData.region || "Unknown",
