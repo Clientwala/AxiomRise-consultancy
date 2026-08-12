@@ -45,13 +45,19 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-border transition-all duration-300 ${
-        scrolled ? "shadow-md" : "shadow-sm"
+      className={`fixed top-0 left-0 right-0 z-50 border-b border-border transition-all duration-300 ${
+        scrolled ? "bg-soft shadow-md" : "bg-white shadow-sm"
       }`}
     >
       <div className="container-max flex items-center justify-between h-20 md:h-24 px-6 lg:px-20 xl:px-28">
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={220} height={55} className="h-12 md:h-14 w-auto" priority />
+        <Link href="/" className="flex items-center gap-3 shrink-0">
+          <span className="relative inline-flex">
+            <Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={220} height={55} className="h-12 md:h-14 w-auto invert rounded-full" priority />
+          </span>
+          <span className="leading-tight">
+            <span className="block font-serif font-bold text-primary text-lg md:text-xl tracking-wide">AxiomRise</span>
+            <span className="block text-[10px] md:text-[11px] text-muted uppercase tracking-[0.18em]">Executive Advisory &amp; Consultancy</span>
+          </span>
         </Link>
 
         {/* Desktop Nav */}

@@ -157,20 +157,21 @@ export const CapIcon = (p: IconProps) => (
 
 export const BoltIcon = (p: IconProps) => (
   <Svg {...p}>
-    <path d="M13 3L5 13h5l-1 8 8-10h-5l1-8z" />
+    <path d="M13.2 2.8 4.6 13.4h4.9L8.2 21.2l8.8-11h-5.1l1.3-7.4z" />
+    <path d="M12 2.4c0 1.2-1.8 2.2-1.8 3.6" opacity={0.45} />
   </Svg>
 );
 
 export const ShieldIcon = (p: IconProps) => (
   <Svg {...p}>
-    <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" />
-    <path d="M9 12l2 2 4-4" />
+    <path d="M12 3.1c.7.5 4.3 1.9 6.1 2.8v5.3c0 4.4-2.8 7.6-6.1 9-3.3-1.4-6.1-4.6-6.1-9V5.9C7.7 5 11.3 3.6 12 3.1z" />
+    <path d="M9.1 12.1l2 2.1 3.8-4" />
   </Svg>
 );
 
 export const HeartIcon = (p: IconProps) => (
   <Svg {...p}>
-    <path d="M12 20s-7-4.5-7-10a3.5 3.5 0 0 1 6-2.5A3.5 3.5 0 0 1 17 10c0 5.5-5 10-5 10z" />
+    <path d="M12 20.3C6.4 16.8 4.5 13 4.5 9.8c0-2.5 1.9-4.4 4.3-4.4 1.4 0 2.6.7 3.2 1.8.6-1.1 1.8-1.8 3.2-1.8 2.4 0 4.3 1.9 4.3 4.4 0 3.2-1.9 7-7.5 10.5z" />
   </Svg>
 );
 

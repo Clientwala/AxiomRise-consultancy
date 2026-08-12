@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/"><Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={190} height={50} className="h-14 w-auto brightness-0 invert mb-4" /></Link>
+            <Link href="/"><Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={190} height={190} className="h-16 w-auto mb-4" /></Link>
             <p className="text-sm text-white/60 leading-relaxed mt-3">A Singapore-incorporated executive advisory and management consultancy firm, connecting exceptional professionals with leading organizations to deliver strategic expertise and accelerate sustainable growth.</p>
             <div className="mt-5 space-y-1 text-xs text-white/50"><p>UEN: 202614733G</p><p>EA Licence No.: 24C2078</p></div>
             <a href="https://www.linkedin.com/in/axiom-rise-330054406/" target="_blank" rel="noopener noreferrer" aria-label="AxiomRise on LinkedIn" className="mt-5 inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/20 hover:bg-white/10 hover:text-accent transition-colors">

@@ -49,21 +49,21 @@ export default function AboutPage() {
       {/* Leadership Section */}
       <section className="section-padding bg-soft-light">
         <div className="container-max">
-          <SectionHeading centered eyebrow="Our Team" title="Leadership" subtitle="Coming together is a beginning. Keeping together is progress. Working together is success." />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-5xl mx-auto">
-            {[1, 2, 3].map((n) => (
-              <div key={n} className="text-center">
-                <div className="rounded-2xl overflow-hidden shadow-md aspect-square mb-5 bg-soft">
-                  <div className="w-full h-full flex items-center justify-center text-muted">
-                    <Image src={`/images/team/leader-${n === 1 ? 'ceo' : n === 2 ? 'ipad' : 'night'}-meeting.jpg`} alt="Team member" width={400} height={400} className="w-full h-full object-cover" />
-                  </div>
-                </div>
-                <h3 className="font-serif text-lg text-primary font-semibold">[ADD TEAM BIO]</h3>
-                <p className="text-sm text-muted">[DESIGNATION]</p>
-              </div>
-            ))}
+          <SectionHeading centered eyebrow="Our Values" title="How We Work" subtitle="Discretion, integrity, and a relentless focus on outcomes guide every engagement." />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 max-w-5xl mx-auto text-center">
+            <div>
+              <h3 className="font-serif text-lg text-primary font-semibold mb-2">Strategic Counsel</h3>
+              <p className="text-sm text-muted leading-relaxed">We bring senior-level judgment to complex decisions, helping leaders act with clarity and confidence.</p>
+            </div>
+            <div>
+              <h3 className="font-serif text-lg text-primary font-semibold mb-2">Relentless Rigour</h3>
+              <p className="text-sm text-muted leading-relaxed">Every recommendation is grounded in analysis, market insight, and measurable outcomes.</p>
+            </div>
+            <div>
+              <h3 className="font-serif text-lg text-primary font-semibold mb-2">Lasting Partnerships</h3>
+              <p className="text-sm text-muted leading-relaxed">We build enduring relationships founded on trust, discretion, and a shared commitment to success.</p>
+            </div>
           </div>
-          <p className="text-xs text-muted text-center mt-6 italic">Team bios and photos to be provided by client</p>
         </div>
       </section>
 

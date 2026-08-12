@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Card from "@/components/ui/Card";
-import Badge from "@/components/ui/Badge";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -11,13 +10,13 @@ import {
 } from "@/components/ui/icons";
 
 const services = [
-  { title: "Management Consultancy", desc: "End-to-end company incorporation, secretarial, and compliance support — from strategy to statutory administration.", icon: BuildingIcon, img: "/images/services/management-consultancy.png", badge: "CORPORATE SERVICES", href: "/services/management-consultancy" },
-  { title: "Payroll Administration", desc: "Accurate monthly payroll processing, CPF submissions, and statutory compliance managed with precision.", icon: WalletIcon, img: "/images/services/data-analytics.jpg", badge: "CORPORATE SERVICES" },
-  { title: "Permanent Recruitment", desc: "Executive-level talent acquisition for mid to senior roles across industries and disciplines.", icon: BriefcaseIcon, img: "/images/services/permanent-recruitment.jpg", badge: "EXECUTIVE SEARCH" },
-  { title: "Temporary Staffing", desc: "Agile workforce solutions scaled to your seasonal, project, and peak-period demands.", icon: ClockIcon, img: "/images/services/hr-manager-reviewing-cvs.jpg", badge: "TALENT SOLUTIONS" },
-  { title: "Contract Staffing", desc: "Specialist out-staffing for long-term initiatives requiring niche expertise and continuity.", icon: DocumentIcon, img: "/images/services/partners-collaboration.jpg", badge: "TALENT SOLUTIONS" },
-  { title: "Executive Search", desc: "Confidential C-suite and board-level search, powered by deep regional networks and market insight.", icon: SearchIcon, img: "/images/services/business-discussion.jpg", badge: "EXECUTIVE SEARCH" },
-  { title: "Call Centre Staffing", desc: "Scalable customer-experience teams deployed to elevate service delivery across the region.", icon: HeadsetIcon, img: "/images/services/women-outdoors.jpg", badge: "TALENT SOLUTIONS" },
+  { title: "Management Consultancy", cat: "Corporate Services", desc: "End-to-end company incorporation, secretarial, and compliance support — from strategy to statutory administration.", icon: BuildingIcon, img: "/images/services/management-consultancy.jpg", href: "/services/management-consultancy" },
+  { title: "Payroll Administration", cat: "Corporate Services", desc: "Accurate monthly payroll processing, CPF submissions, and statutory compliance managed with precision.", icon: WalletIcon, img: "/images/services/data-analytics.jpg" },
+  { title: "Permanent Recruitment", cat: "Executive Search", desc: "Executive-level talent acquisition for mid to senior roles across industries and disciplines.", icon: BriefcaseIcon, img: "/images/services/permanent-recruitment.jpg" },
+  { title: "Temporary Staffing", cat: "Talent Solutions", desc: "Agile workforce solutions scaled to your seasonal, project, and peak-period demands.", icon: ClockIcon, img: "/images/services/hr-manager-reviewing-cvs.jpg" },
+  { title: "Contract Staffing", cat: "Talent Solutions", desc: "Specialist out-staffing for long-term initiatives requiring niche expertise and continuity.", icon: DocumentIcon, img: "/images/services/partners-collaboration.jpg" },
+  { title: "Executive Search", cat: "Executive Search", desc: "Confidential C-suite and board-level search, powered by deep regional networks and market insight.", icon: SearchIcon, img: "/images/services/business-discussion.jpg" },
+  { title: "Call Centre Staffing", cat: "Talent Solutions", desc: "Scalable customer-experience teams deployed to elevate service delivery across the region.", icon: HeadsetIcon, img: "/images/services/women-outdoors.jpg" },
 ];
 
 export default function ServicesGrid() {
@@ -31,10 +30,12 @@ export default function ServicesGrid() {
               <Card className="h-full flex flex-col overflow-hidden p-0 group">
                 <div className="relative h-48 overflow-hidden">
                   <Image src={s.img} alt={s.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute top-3 left-3"><Badge text={s.badge} /></div>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <div className="flex items-center gap-2 mb-3 text-accent"><s.icon size={22} /></div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-accent"><s.icon size={24} /></span>
+                    <span className="text-[10px] tracking-[0.15em] font-semibold uppercase text-muted">{s.cat}</span>
+                  </div>
                   <h3 className="text-lg font-serif font-semibold text-primary mb-2">{s.title}</h3>
                   <p className="text-sm text-muted leading-relaxed flex-1">{s.desc}</p>
                   <Link href={s.href || "/services"} className="inline-flex items-center gap-1 text-sm font-semibold text-accent mt-4 hover:underline">

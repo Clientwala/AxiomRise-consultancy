@@ -58,7 +58,7 @@ export default function CookieBanner() {
                 traffic, and personalize content. By clicking{" "}
                 <strong>&quot;Accept All&quot;</strong>, you consent to our use of
                 cookies.{" "}
-                <a href="#" className="text-accent underline">
+                <a href="/privacy-policy" className="text-accent underline underline-offset-2 hover:text-accent-dark transition-colors">
                   Learn more
                 </a>
               </p>
