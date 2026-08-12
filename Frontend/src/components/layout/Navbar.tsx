@@ -13,12 +13,12 @@ const navLinks = [
     label: "Services", href: "/services",
     dropdown: [
       { label: "Management Consultancy", href: "/services/management-consultancy", highlight: true },
-      { label: "Payroll Administration", href: "/services" },
-      { label: "Permanent Recruitment", href: "/services" },
-      { label: "Temporary Staffing", href: "/services" },
-      { label: "Contract Staffing", href: "/services" },
-      { label: "Executive Search", href: "/services" },
-      { label: "Call Centre Staffing", href: "/services" },
+      { label: "Payroll Administration", href: "/services/payroll-administration" },
+      { label: "Permanent Recruitment", href: "/services/permanent-recruitment" },
+      { label: "Temporary Staffing", href: "/services/temporary-staffing" },
+      { label: "Contract Staffing", href: "/services/contract-staffing" },
+      { label: "Executive Search", href: "/services/executive-search" },
+      { label: "Call Centre Staffing", href: "/services/call-centre-staffing" },
     ],
   },
   { label: "About Us", href: "/about" },
@@ -51,12 +51,12 @@ export default function Navbar() {
     >
       <div className="container-max flex items-center justify-between h-20 md:h-24 px-6 lg:px-20 xl:px-28">
         <Link href="/" className="flex items-center gap-3 shrink-0">
-          <span className="relative inline-flex">
-            <Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={220} height={55} className="h-12 md:h-14 w-auto invert rounded-full" priority />
+          <span className="inline-flex items-center justify-center bg-primary rounded-full p-1.5 shrink-0">
+            <Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={220} height={220} className="h-10 md:h-12 w-auto" priority />
           </span>
           <span className="leading-tight">
-            <span className="block font-serif font-bold text-primary text-lg md:text-xl tracking-wide">AxiomRise</span>
-            <span className="block text-[10px] md:text-[11px] text-muted uppercase tracking-[0.18em]">Executive Advisory &amp; Consultancy</span>
+            <span className="block font-serif font-semibold text-primary text-xl md:text-2xl tracking-tight">AxiomRise</span>
+            <span className="block text-[9px] md:text-[10px] font-medium text-muted uppercase tracking-[0.22em]">Executive Advisory &amp; Consultancy</span>
           </span>
         </Link>
 

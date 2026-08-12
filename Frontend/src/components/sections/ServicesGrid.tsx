@@ -10,13 +10,13 @@ import {
 } from "@/components/ui/icons";
 
 const services = [
-  { title: "Management Consultancy", cat: "Corporate Services", desc: "End-to-end company incorporation, secretarial, and compliance support — from strategy to statutory administration.", icon: BuildingIcon, img: "/images/services/management-consultancy.jpg", href: "/services/management-consultancy" },
-  { title: "Payroll Administration", cat: "Corporate Services", desc: "Accurate monthly payroll processing, CPF submissions, and statutory compliance managed with precision.", icon: WalletIcon, img: "/images/services/data-analytics.jpg" },
-  { title: "Permanent Recruitment", cat: "Executive Search", desc: "Executive-level talent acquisition for mid to senior roles across industries and disciplines.", icon: BriefcaseIcon, img: "/images/services/permanent-recruitment.jpg" },
-  { title: "Temporary Staffing", cat: "Talent Solutions", desc: "Agile workforce solutions scaled to your seasonal, project, and peak-period demands.", icon: ClockIcon, img: "/images/services/hr-manager-reviewing-cvs.jpg" },
-  { title: "Contract Staffing", cat: "Talent Solutions", desc: "Specialist out-staffing for long-term initiatives requiring niche expertise and continuity.", icon: DocumentIcon, img: "/images/services/partners-collaboration.jpg" },
-  { title: "Executive Search", cat: "Executive Search", desc: "Confidential C-suite and board-level search, powered by deep regional networks and market insight.", icon: SearchIcon, img: "/images/services/business-discussion.jpg" },
-  { title: "Call Centre Staffing", cat: "Talent Solutions", desc: "Scalable customer-experience teams deployed to elevate service delivery across the region.", icon: HeadsetIcon, img: "/images/services/women-outdoors.jpg" },
+  { title: "Management Consultancy", desc: "End-to-end company incorporation, secretarial, and compliance support — from strategy to statutory administration.", icon: BuildingIcon, img: "/images/services/management-consultancy.jpg", href: "/services/management-consultancy" },
+  { title: "Payroll Administration", desc: "Accurate monthly payroll processing, CPF submissions, and statutory compliance managed with precision.", icon: WalletIcon, img: "/images/services/data-analytics.jpg", href: "/services/payroll-administration" },
+  { title: "Permanent Recruitment", desc: "Executive-level talent acquisition for mid to senior roles across industries and disciplines.", icon: BriefcaseIcon, img: "/images/services/permanent-recruitment.jpg", href: "/services/permanent-recruitment" },
+  { title: "Temporary Staffing", desc: "Agile workforce solutions scaled to your seasonal, project, and peak-period demands.", icon: ClockIcon, img: "/images/services/hr-manager-reviewing-cvs.jpg", href: "/services/temporary-staffing" },
+  { title: "Contract Staffing", desc: "Specialist out-staffing for long-term initiatives requiring niche expertise and continuity.", icon: DocumentIcon, img: "/images/services/partners-collaboration.jpg", href: "/services/contract-staffing" },
+  { title: "Executive Search", desc: "Confidential C-suite and board-level search, powered by deep regional networks and market insight.", icon: SearchIcon, img: "/images/services/business-discussion.jpg", href: "/services/executive-search" },
+  { title: "Call Centre Staffing", desc: "Scalable customer-experience teams deployed to elevate service delivery across the region.", icon: HeadsetIcon, img: "/images/services/women-outdoors.jpg", href: "/services/call-centre-staffing" },
 ];
 
 export default function ServicesGrid() {
@@ -32,10 +32,7 @@ export default function ServicesGrid() {
                   <Image src={s.img} alt={s.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-accent"><s.icon size={24} /></span>
-                    <span className="text-[10px] tracking-[0.15em] font-semibold uppercase text-muted">{s.cat}</span>
-                  </div>
+                  <div className="text-accent mb-3"><s.icon size={26} /></div>
                   <h3 className="text-lg font-serif font-semibold text-primary mb-2">{s.title}</h3>
                   <p className="text-sm text-muted leading-relaxed flex-1">{s.desc}</p>
                   <Link href={s.href || "/services"} className="inline-flex items-center gap-1 text-sm font-semibold text-accent mt-4 hover:underline">

@@ -7,7 +7,15 @@ const quickLinks = [
   { label: "Services", href: "/services" }, { label: "Management Consultancy", href: "/services/management-consultancy" },
   { label: "Contact Us", href: "/contact" },
 ];
-const services = ["Management Consultancy","Payroll Administration","Permanent Recruitment","Temporary Staffing","Contract Staffing","Executive Search","Call Centre Staffing"];
+const services = [
+  { label: "Management Consultancy", href: "/services/management-consultancy" },
+  { label: "Payroll Administration", href: "/services/payroll-administration" },
+  { label: "Permanent Recruitment", href: "/services/permanent-recruitment" },
+  { label: "Temporary Staffing", href: "/services/temporary-staffing" },
+  { label: "Contract Staffing", href: "/services/contract-staffing" },
+  { label: "Executive Search", href: "/services/executive-search" },
+  { label: "Call Centre Staffing", href: "/services/call-centre-staffing" },
+];
 
 export default function Footer() {
   return (
@@ -31,7 +39,7 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-accent mb-5">Our Services</h4>
-            <ul className="space-y-3">{services.map(s=><li key={s}><Link href={s==="Management Consultancy"?"/services/management-consultancy":"/services"} className="text-sm text-white/60 hover:text-accent transition-colors">{s}</Link></li>)}</ul>
+            <ul className="space-y-3">{services.map(s=><li key={s.label}><Link href={s.href} className="text-sm text-white/60 hover:text-accent transition-colors">{s.label}</Link></li>)}</ul>
           </div>
           {/* Contact */}
           <div>
