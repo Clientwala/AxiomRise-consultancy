@@ -4,7 +4,7 @@ import WhyUs from "@/components/sections/WhyUs";
 
 export const metadata: Metadata = {
   title: "Our Services — AxiomRise Consultancy",
-  description: "Executive advisory, management consultancy, corporate services, and executive search — from company incorporation and payroll administration to permanent recruitment.",
+  description: "Employment agency, management consultancy, corporate services, and executive search — from company incorporation and payroll administration to permanent recruitment.",
 };
 
 export default function ServicesPage() {

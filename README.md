@@ -11,7 +11,7 @@ Axiom Rise Consultancy Pte. Ltd. is a Singapore-incorporated **Talent & HR Solut
 | Detail | Value |
 |--------|-------|
 | **Legal Name** | Axiom Rise Consultancy Pte. Ltd. |
-| **UEN** | 202614733G |
+| **UEN** | 202611282W |
 | **EA Licence No.** | 24C2078 |
 | **Registered Address** | 749 Woodlands Circle, #12-616, Singapore 730749 |
 | **Contact Email** | latha@axiomrise.sg |

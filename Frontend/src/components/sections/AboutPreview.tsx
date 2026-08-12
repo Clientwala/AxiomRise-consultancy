@@ -12,7 +12,7 @@ export default function AboutPreview() {
             <SectionHeading
               eyebrow="Who We Are"
               title="Advisory Excellence, Delivered With Purpose"
-              subtitle="AxiomRise is a Singapore-incorporated executive advisory and management consultancy firm. We connect exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth across the region."
+              subtitle="AxiomRise is a Singapore-incorporated employment agency and management consultancy firm. We connect exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth across the region."
             />
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30, scale: 0.97 }} whileInView={{ opacity: 1, x: 0, scale: 1 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.7, delay: 0.2 }} className="relative group">

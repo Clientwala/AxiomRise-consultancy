@@ -56,7 +56,7 @@ export default function Navbar() {
           </span>
           <span className="leading-tight">
             <span className="block font-serif font-semibold text-primary text-xl md:text-2xl tracking-tight">AxiomRise</span>
-            <span className="block text-[8px] md:text-[9px] font-medium text-muted uppercase tracking-[0.22em]">Executive Advisory &amp; Consultancy</span>
+            <span className="block text-[8px] md:text-[9px] font-medium text-muted uppercase tracking-[0.22em]">Employment Agency &amp; Management Consultancy</span>
           </span>
         </Link>
 

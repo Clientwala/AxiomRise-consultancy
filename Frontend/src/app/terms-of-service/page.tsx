@@ -22,7 +22,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="font-serif text-xl text-primary mb-3">2. Our Services</h2>
-              <p>Axiom Rise Consultancy Pte. Ltd. provides executive advisory, management consultancy, corporate services, and talent solutions. Specific engagements are governed by separate written agreements between AxiomRise and the client.</p>
+              <p>Axiom Rise Consultancy Pte. Ltd. provides employment agency, management consultancy, corporate services, and talent solutions. Specific engagements are governed by separate written agreements between AxiomRise and the client.</p>
             </section>
 
             <section>

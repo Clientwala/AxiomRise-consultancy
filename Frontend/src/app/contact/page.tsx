@@ -60,7 +60,7 @@ export default function ContactPage() {
                   <h4 className="font-semibold text-primary text-sm mb-2">Company Info</h4>
                   <p className="text-xs text-muted leading-relaxed">
                     Axiom Rise Consultancy Pte. Ltd.<br />
-                    UEN: 202614733G<br />
+                    UEN: 202611282W<br />
                     EA Licence No.: 24C2078
                   </p>
                 </div>
