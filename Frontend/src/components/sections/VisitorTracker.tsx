@@ -3,8 +3,6 @@
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
-
 function generateSessionId(): string {
   if (typeof window !== "undefined") {
     let sid = sessionStorage.getItem("__ar_session");
@@ -38,7 +36,7 @@ export default function VisitorTracker() {
     const track = async () => {
       try {
         const { accepted, given } = getCookieConsent();
-        await fetch(`${API_URL}/track`, {
+        await fetch("/api/track", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

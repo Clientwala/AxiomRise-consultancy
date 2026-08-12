@@ -3,8 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
-
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
@@ -23,7 +21,7 @@ export default function CookieBanner() {
     localStorage.setItem("__ar_consent", "true");
     setVisible(false);
     // Re-track with consent
-    fetch(`${API_URL}/track`, {
+    fetch("/api/track", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
