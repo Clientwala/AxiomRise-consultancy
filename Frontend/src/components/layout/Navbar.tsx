@@ -12,12 +12,13 @@ const navLinks = [
   {
     label: "Services", href: "/services",
     dropdown: [
+      { label: "Management Consultancy", href: "/services/management-consultancy", highlight: true },
+      { label: "Payroll Administration", href: "/services" },
       { label: "Permanent Recruitment", href: "/services" },
       { label: "Temporary Staffing", href: "/services" },
       { label: "Contract Staffing", href: "/services" },
       { label: "Executive Search", href: "/services" },
       { label: "Call Centre Staffing", href: "/services" },
-      { label: "Management Consultancy", href: "/services/management-consultancy", highlight: true },
     ],
   },
   { label: "About Us", href: "/about" },
@@ -44,13 +45,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-border" : "bg-soft/80 backdrop-blur-sm border-b border-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-border transition-all duration-300 ${
+        scrolled ? "shadow-md" : "shadow-sm"
       }`}
     >
-      <div className="container-max flex items-center justify-between h-16 md:h-20 px-6 lg:px-20 xl:px-28">
+      <div className="container-max flex items-center justify-between h-20 md:h-24 px-6 lg:px-20 xl:px-28">
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={180} height={44} className="h-10 w-auto" priority />
+          <Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={220} height={55} className="h-12 md:h-14 w-auto" priority />
         </Link>
 
         {/* Desktop Nav */}

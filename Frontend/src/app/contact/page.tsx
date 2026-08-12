@@ -6,18 +6,18 @@ import { HiMapPin, HiEnvelope, HiClock } from "react-icons/hi2";
 
 export const metadata: Metadata = {
   title: "Contact Us — AxiomRise Consultancy",
-  description: "Get in touch with AxiomRise Consultancy. 749 Woodlands Circle, #12-616, Singapore 730749. Email: latha@axiomrise.sg.",
+  description: "Get in touch with AxiomRise Consultancy. 749 Woodlands Circle, #12-616, Singapore 730749. Email: info@axiomrise.sg.",
 };
 
 export default function ContactPage() {
   return (
     <>
       {/* Header */}
-      <section className="relative bg-soft overflow-hidden pt-20 md:pt-24">
+      <section className="relative bg-soft overflow-hidden pt-24 md:pt-28">
         <div className="container-max px-6 lg:px-20 xl:px-28 py-16 md:py-20 text-center">
           <p className="eyebrow">Get In Touch</p>
           <h1 className="font-serif text-4xl md:text-5xl text-primary leading-tight">Let&apos;s Start a Conversation</h1>
-          <p className="section-subtitle mx-auto">Whether you&apos;re looking to hire, scale, or simplify compliance — we&apos;re here to help.</p>
+          <p className="section-subtitle mx-auto">Whether you&apos;re navigating a complex challenge, seeking strategic counsel, or planning your next growth phase — we&apos;re here to help.</p>
         </div>
       </section>
 
@@ -45,7 +45,8 @@ export default function ContactPage() {
                   <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center shrink-0"><HiEnvelope className="text-accent text-lg" /></div>
                   <div>
                     <h4 className="font-semibold text-primary text-sm mb-1">Email</h4>
-                    <a href="mailto:latha@axiomrise.sg" className="text-accent text-sm hover:underline">latha@axiomrise.sg</a>
+                    <a href="mailto:info@axiomrise.sg" className="block text-accent text-sm hover:underline">info@axiomrise.sg</a>
+                    <a href="mailto:latha@axiomrise.sg" className="block text-accent text-sm hover:underline">latha@axiomrise.sg</a>
                   </div>
                 </div>
                 <div className="flex gap-4">

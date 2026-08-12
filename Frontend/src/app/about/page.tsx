@@ -5,18 +5,18 @@ import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "About Us — AxiomRise Consultancy",
-  description: "Singapore-incorporated Talent & HR Solutions and Management Consultancy firm. UEN: 202614733G, EA Licence No.: 24C2078.",
+  description: "Axiom Rise Pte. Ltd. is a Singapore-incorporated executive advisory and management consultancy firm. UEN: 202614733G, EA Licence No.: 24C2078.",
 };
 
 export default function AboutPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="relative bg-soft overflow-hidden pt-20 md:pt-24">
+      <section className="relative bg-soft overflow-hidden pt-24 md:pt-28">
         <div className="container-max px-6 lg:px-20 xl:px-28 py-16 md:py-20 text-center">
           <p className="eyebrow">About Us</p>
           <h1 className="font-serif text-4xl md:text-5xl text-primary leading-tight">Our Story</h1>
-          <p className="section-subtitle mx-auto">Built on a foundation of talent expertise, now expanded into management consultancy — AxiomRise is your partner for growth in Asia Pacific.</p>
+          <p className="section-subtitle mx-auto">A Singapore-incorporated executive advisory and management consultancy firm — connecting exceptional professionals with leading organizations across the region.</p>
         </div>
       </section>
 
@@ -28,12 +28,12 @@ export default function AboutPage() {
               <Image src="/images/about/boardroom-brainstorm.jpg" alt="AxiomRise leadership discussion" width={600} height={450} className="w-full h-full object-cover" />
             </div>
             <div>
-              <SectionHeading eyebrow="Who We Are" title="Enabling Business Growth Across Asia Pacific" />
+              <SectionHeading eyebrow="Who We Are" title="Advisory Excellence for Business Growth" />
               <p className="text-muted leading-relaxed mb-4">
-                Axiom Rise Consultancy Pte. Ltd. was founded in Singapore with a clear mission: to bridge the gap between exceptional talent and visionary companies. Over time, we recognized that our clients needed more than just people — they needed a partner who could also navigate the complexities of corporate governance and compliance.
+                Axiom Rise Pte. Ltd. is a Singapore-incorporated executive advisory and management consultancy firm. We work at the intersection of people, strategy, and business transformation — helping organizations navigate complex challenges, unlock opportunities, and build lasting competitive advantage.
               </p>
               <p className="text-muted leading-relaxed mb-6">
-                Today, AxiomRise combines deep expertise in talent acquisition with a comprehensive suite of management consultancy services — including company incorporation, secretarial services, accounting, payroll, and more. We serve as a single point of accountability for businesses looking to scale in Singapore and across the region.
+                We connect exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth. Our portfolio spans management consultancy, corporate services — including incorporation, secretarial, payroll administration, accounting and compliance — alongside executive search and specialist staffing.
               </p>
               <div className="grid grid-cols-2 gap-4 text-sm text-muted border-t border-border pt-6">
                 <div><span className="block text-primary font-semibold">UEN</span>202614733G</div>

@@ -7,18 +7,21 @@ const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: (i: number) => ({ opaci
 
 export default function Hero() {
   return (
-    <section className="relative bg-soft overflow-hidden pt-20 md:pt-24">
+    <section className="relative bg-soft overflow-hidden pt-24 md:pt-28">
       <div className="container-max px-6 lg:px-20 xl:px-28 py-16 md:py-24 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <motion.p custom={0} initial="hidden" animate="visible" variants={fadeUp} className="eyebrow">Singapore &bull; EA Licence No. 24C2078</motion.p>
-            <motion.h1 custom={1} initial="hidden" animate="visible" variants={fadeUp} className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.15] tracking-tight">
-              Talent, Strategy, and<br /><span className="text-accent">Governance</span> — Under One Roof.
+            <motion.p custom={0} initial="hidden" animate="visible" variants={fadeUp} className="eyebrow">Singapore &bull; Executive Advisory &amp; Management Consultancy</motion.p>
+            <motion.h1 custom={1} initial="hidden" animate="visible" variants={fadeUp} className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary leading-[1.12] tracking-tight">
+              Strategy, People, and<br /><span className="text-accent">Business Transformation</span>
             </motion.h1>
-            <motion.p custom={2} initial="hidden" animate="visible" variants={fadeUp} className="text-muted text-base md:text-lg mt-6 max-w-lg leading-relaxed">
-              From building high-performing teams to simplifying corporate compliance, AxiomRise delivers end-to-end HR solutions and management consultancy for businesses across Asia Pacific.
+            <motion.p custom={2} initial="hidden" animate="visible" variants={fadeUp} className="text-muted text-base md:text-lg mt-6 max-w-xl leading-relaxed">
+              Axiom Rise Pte. Ltd. is a Singapore-incorporated executive advisory and management consultancy firm, connecting exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth across the region.
             </motion.p>
-            <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp} className="flex flex-wrap gap-4 mt-8">
+            <motion.p custom={3} initial="hidden" animate="visible" variants={fadeUp} className="text-muted/80 text-sm md:text-base mt-4 max-w-xl leading-relaxed italic">
+              We work at the intersection of people, strategy, and business transformation — helping organizations navigate complex challenges, unlock opportunities, and build lasting competitive advantage.
+            </motion.p>
+            <motion.div custom={4} initial="hidden" animate="visible" variants={fadeUp} className="flex flex-wrap gap-4 mt-8">
               <Button href="/services" variant="primary" size="lg">Explore Services</Button>
               <Button href="/contact" variant="outline" size="lg">Talk to Us</Button>
             </motion.div>

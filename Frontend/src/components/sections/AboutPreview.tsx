@@ -11,8 +11,8 @@ export default function AboutPreview() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.6 }}>
             <SectionHeading
               eyebrow="Who We Are"
-              title="Enabling Talent & Business Excellence in Asia Pacific"
-              subtitle="AxiomRise is a Singapore-incorporated firm combining deep expertise in talent acquisition with a full suite of management consultancy services. We help businesses scale with confidence — from workforce strategy to corporate governance."
+              title="Advisory Excellence, Delivered With Purpose"
+              subtitle="AxiomRise is a Singapore-incorporated executive advisory and management consultancy firm. We connect exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth across the region."
             />
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.6, delay: 0.2 }} className="relative">

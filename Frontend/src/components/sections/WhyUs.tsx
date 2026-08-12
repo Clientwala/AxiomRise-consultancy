@@ -2,12 +2,12 @@
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
-import { HiBolt, HiShieldCheck, HiHeart } from "react-icons/hi2";
+import { BoltIcon, ShieldIcon, HeartIcon } from "@/components/ui/icons";
 
 const reasons = [
-  { icon: HiBolt, title: "Speed & Precision", desc: "We fill critical roles in days, not months. Our targeted approach ensures the right fit — fast." },
-  { icon: HiShieldCheck, title: "End-to-End Service", desc: "From recruitment to corporate compliance, one trusted partner handles your entire business lifecycle." },
-  { icon: HiHeart, title: "Built on Trust", desc: "Every engagement is guided by transparency, integrity, and a genuine commitment to your success." },
+  { icon: BoltIcon, title: "Speed & Precision", desc: "We fill critical roles in days, not months. Our targeted approach ensures the right fit — fast." },
+  { icon: ShieldIcon, title: "End-to-End Service", desc: "From recruitment to corporate compliance, one trusted partner handles your entire business lifecycle." },
+  { icon: HeartIcon, title: "Built on Trust", desc: "Every engagement is guided by transparency, integrity, and a genuine commitment to your success." },
 ];
 
 export default function WhyUs() {

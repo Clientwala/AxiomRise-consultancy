@@ -3,32 +3,35 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
-import { HiCloudUpload, HiPencilAlt, HiChartBar, HiBell, HiUserGroup } from "react-icons/hi";
+import {
+  PeopleIcon, UploadIcon, PenIcon, ChartIcon, BellIcon,
+  BuildingIcon, DocumentIcon, CompassIcon, WalletIcon, ScaleIcon,
+} from "@/components/ui/icons";
 
 export const metadata: Metadata = {
   title: "Management Consultancy — AxiomRise Consultancy",
-  description: "Boutique corporate services — company incorporation, secretarial, accounting, payroll, taxation, and compliance for businesses in Singapore and beyond.",
+  description: "Boutique corporate services — company incorporation, secretarial, accounting, payroll administration, taxation, and compliance for businesses in Singapore and beyond.",
 };
 
 const features = [
-  { icon: HiUserGroup, title: "Collaborate with our team", desc: "Work directly with experienced corporate services professionals." },
-  { icon: HiCloudUpload, title: "Upload documents with a click", desc: "Secure, simple document submission through our platform." },
-  { icon: HiPencilAlt, title: "E-sign documents quickly", desc: "Digitally sign and execute documents — no printing required." },
-  { icon: HiChartBar, title: "Track progress in real-time", desc: "Monitor active tasks and milestones at every stage." },
-  { icon: HiBell, title: "Automatic compliance alerts", desc: "Never miss a deadline with smart notifications for filings and renewals." },
+  { icon: PeopleIcon, title: "Collaborate with our team", desc: "Work directly with experienced corporate services professionals." },
+  { icon: UploadIcon, title: "Upload documents with a click", desc: "Secure, simple document submission through our platform." },
+  { icon: PenIcon, title: "E-sign documents quickly", desc: "Digitally sign and execute documents — no printing required." },
+  { icon: ChartIcon, title: "Track progress in real-time", desc: "Monitor active tasks and milestones at every stage." },
+  { icon: BellIcon, title: "Automatic compliance alerts", desc: "Never miss a deadline with smart notifications for filings and renewals." },
 ];
 
 const serviceItems = [
-  { title: "Company Incorporation", desc: "End-to-end Singapore company registration, including name reservation, structure advice, and bank account opening." },
-  { title: "Company Secretarial", desc: "Annual filings, AGM preparation, board resolutions, and full compliance with ACRA requirements." },
-  { title: "Representative Office Setup", desc: "Establish a presence in Singapore for foreign companies exploring the Asian market." },
-  { title: "Business Advisory", desc: "Strategic guidance on market entry, regulatory landscape, and business structure optimization." },
-  { title: "Offshore Company Formation", desc: "Jurisdiction selection and incorporation in key offshore financial centres for global operations." },
-  { title: "Work Pass / EP Applications", desc: "Employment Pass, S Pass, Work Permit applications and renewals managed end-to-end." },
-  { title: "Payroll Management", desc: "Monthly payroll processing, CPF submissions, IRAS compliance, and employee payslips." },
-  { title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, management reporting, and audit support." },
-  { title: "Taxation & Compliance", desc: "Corporate tax filing, GST registration and returns, ECI submissions, and tax planning." },
-  { title: "Digital Bookkeeping Solutions", desc: "Cloud-based accounting and bookkeeping powered by leading platforms — real-time visibility into your financials." },
+  { icon: BuildingIcon, title: "Company Incorporation", desc: "End-to-end Singapore company registration, including name reservation, structure advice, and bank account opening." },
+  { icon: DocumentIcon, title: "Company Secretarial", desc: "Annual filings, AGM preparation, board resolutions, and full compliance with ACRA requirements." },
+  { icon: CompassIcon, title: "Representative Office Setup", desc: "Establish a presence in Singapore for foreign companies exploring the Asian market." },
+  { icon: CompassIcon, title: "Business Advisory", desc: "Strategic guidance on market entry, regulatory landscape, and business structure optimization." },
+  { icon: BuildingIcon, title: "Offshore Company Formation", desc: "Jurisdiction selection and incorporation in key offshore financial centres for global operations." },
+  { icon: DocumentIcon, title: "Work Pass / EP Applications", desc: "Employment Pass, S Pass, Work Permit applications and renewals managed end-to-end." },
+  { icon: WalletIcon, title: "Payroll Administration", desc: "Monthly payroll processing, CPF submissions, IRAS compliance, and employee payslips managed with precision." },
+  { icon: ScaleIcon, title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, management reporting, and audit support." },
+  { icon: ScaleIcon, title: "Taxation & Compliance", desc: "Corporate tax filing, GST registration and returns, ECI submissions, and tax planning." },
+  { icon: ChartIcon, title: "Digital Bookkeeping Solutions", desc: "Cloud-based accounting and bookkeeping powered by leading platforms — real-time visibility into your financials." },
 ];
 
 export default function ManagementConsultancyPage() {
@@ -57,8 +60,8 @@ export default function ManagementConsultancyPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-8">
             {features.map((f, i) => (
               <div key={f.title} className="text-center px-3">
-                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-soft flex items-center justify-center">
-                  <f.icon className="text-xl text-accent" />
+                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-soft flex items-center justify-center text-accent">
+                  <f.icon size={22} />
                 </div>
                 <h3 className="font-semibold text-sm text-primary mb-1.5">{f.title}</h3>
                 <p className="text-xs text-muted leading-relaxed">{f.desc}</p>
@@ -75,6 +78,7 @@ export default function ManagementConsultancyPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
             {serviceItems.map((s, i) => (
               <Card key={s.title} className="group">
+                <div className="text-accent mb-3"><s.icon size={24} /></div>
                 <h3 className="font-serif text-lg font-semibold text-primary mb-2">{s.title}</h3>
                 <p className="text-sm text-muted leading-relaxed">{s.desc}</p>
               </Card>

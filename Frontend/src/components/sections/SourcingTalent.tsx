@@ -1,13 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { HiCpuChip, HiMegaphone, HiUserGroup, HiAcademicCap } from "react-icons/hi2";
+import { ChipIcon, MegaphoneIcon, NetworkIcon, CapIcon } from "@/components/ui/icons";
 
 const items = [
-  { icon: HiCpuChip, title: "AI Database Platform", desc: "Our proprietary AI-powered platform intelligently matches candidates to roles, reducing time-to-hire by up to 40%." },
-  { icon: HiMegaphone, title: "Targeted Advertising", desc: "Strategic job advertising across premium platforms ensures your roles reach the most qualified talent." },
-  { icon: HiUserGroup, title: "Referrals & Networks", desc: "Decades-deep industry networks and trusted referral channels connect you with passive candidates." },
-  { icon: HiAcademicCap, title: "Career Fairs & Executive Search", desc: "Active sourcing through career fairs, campus recruitment, and bespoke executive headhunting assignments." },
+  { icon: ChipIcon, title: "AI Database Platform", desc: "Our proprietary AI-powered platform intelligently matches candidates to roles, reducing time-to-hire by up to 40%." },
+  { icon: MegaphoneIcon, title: "Targeted Advertising", desc: "Strategic job advertising across premium platforms ensures your roles reach the most qualified talent." },
+  { icon: NetworkIcon, title: "Referrals & Networks", desc: "Decades-deep industry networks and trusted referral channels connect you with passive candidates." },
+  { icon: CapIcon, title: "Career Fairs & Executive Search", desc: "Active sourcing through career fairs, campus recruitment, and bespoke executive headhunting assignments." },
 ];
 
 export default function SourcingTalent() {
