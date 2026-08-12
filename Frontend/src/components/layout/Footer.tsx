@@ -21,9 +21,9 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white">
       <div className="container-max px-6 lg:px-20 xl:px-28 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1">
             <Link href="/"><Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={190} height={190} className="h-16 w-auto mb-4" /></Link>
             <p className="text-sm text-white/60 leading-relaxed mt-3">A Singapore-incorporated executive advisory and management consultancy firm, connecting exceptional professionals with leading organizations to deliver strategic expertise and accelerate sustainable growth.</p>
             <div className="mt-5 space-y-1 text-xs text-white/50"><p>UEN: 202614733G</p><p>EA Licence No.: 24C2078</p></div>
@@ -32,17 +32,17 @@ export default function Footer() {
             </a>
           </div>
           {/* Quick Links */}
-          <div>
+          <div className="col-span-1">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-accent mb-5">Quick Links</h4>
             <ul className="space-y-3">{quickLinks.map(l=><li key={l.label}><Link href={l.href} className="text-sm text-white/60 hover:text-accent transition-colors">{l.label}</Link></li>)}</ul>
           </div>
           {/* Services */}
-          <div>
+          <div className="col-span-1">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-accent mb-5">Our Services</h4>
             <ul className="space-y-3">{services.map(s=><li key={s.label}><Link href={s.href} className="text-sm text-white/60 hover:text-accent transition-colors">{s.label}</Link></li>)}</ul>
           </div>
           {/* Contact */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-accent mb-5">Contact</h4>
             <div className="space-y-4 text-sm text-white/60">
               <div><p className="text-white/80 font-medium mb-1">Address</p><p>749 Woodlands Circle, #12-616</p><p>Singapore 730749</p></div>
