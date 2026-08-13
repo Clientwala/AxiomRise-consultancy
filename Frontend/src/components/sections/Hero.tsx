@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left Content */}
           <div>
-            <motion.p custom={0} initial="hidden" animate="visible" variants={fadeUp} className="eyebrow">Singapore &bull; Employment Agency &amp; Management Consultancy</motion.p>
+            <motion.p custom={0} initial="hidden" animate="visible" variants={fadeUp} className="eyebrow">Employment &amp; Management Consultancy</motion.p>
             <motion.h1 custom={1} initial="hidden" animate="visible" variants={fadeUp} className="font-serif text-4xl md:text-5xl lg:text-[3.4rem] text-primary leading-[1.12] tracking-tight">
               Strategy, People &amp;<br /><span className="text-accent">Business Transformation</span>
             </motion.h1>
