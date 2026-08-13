@@ -51,7 +51,7 @@ export default function Navbar() {
     >
       <div className="container-max flex items-center justify-between h-20 md:h-24 px-6 lg:px-20 xl:px-28">
         <Link href="/" className="flex items-center gap-3 shrink-0">
-          <span className="inline-flex items-center justify-center bg-primary rounded-full p-1 shrink-0">
+          <span className="inline-flex items-center justify-center bg-primary rounded-full p-0.5 shrink-0">
             <Image src="/logo/axiomrise-logo.png" alt="AxiomRise Consultancy" width={220} height={220} className="h-10 md:h-12 w-auto" priority />
           </span>
           <span className="leading-tight">
