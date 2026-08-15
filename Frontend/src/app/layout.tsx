@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://axiom-rise-consultancy.vercel.app"),
-  title: "AxiomRise Consultancy — Employment Agency & Management Consultancy in Singapore",
+  title: "Axiom Rise Consultancy — Employment Agency & Management Consultancy in Singapore",
   description:
     "Axiom Rise Pte. Ltd. is a Singapore-incorporated employment agency and management consultancy firm connecting exceptional professionals with leading organizations to deliver strategic expertise and accelerate sustainable growth.",
   keywords: [
@@ -24,16 +24,16 @@ export const metadata: Metadata = {
   icons: { icon: "/logo/axiomrise-logo.png", apple: "/logo/axiomrise-logo.png" },
   alternates: { canonical: "/" },
   openGraph: {
-    title: "AxiomRise Consultancy — Employment Agency & Management Consultancy",
+    title: "Axiom Rise Consultancy — Employment Agency & Management Consultancy",
     description:
       "Strategy, people, and business transformation — under one roof. Singapore-incorporated employment agency and management consultancy firm.",
-    siteName: "AxiomRise Consultancy",
+    siteName: "Axiom Rise Consultancy",
     type: "website",
     images: [{ url: "/logo/axiomrise-logo.png", width: 512, height: 512 }],
   },
   twitter: {
     card: "summary",
-    title: "AxiomRise Consultancy — Employment Agency & Management Consultancy",
+    title: "Axiom Rise Consultancy — Employment Agency & Management Consultancy",
     description: "Singapore-incorporated employment agency and management consultancy firm.",
   },
   robots: { index: true, follow: true },

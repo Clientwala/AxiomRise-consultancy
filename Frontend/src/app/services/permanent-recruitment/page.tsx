@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/sections/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Permanent Recruitment — AxiomRise Consultancy",
+  title: "Permanent Recruitment — Axiom Rise Consultancy",
   description: "Executive-level permanent recruitment across industries. We connect exceptional professionals with leading organizations for long-term roles.",
 };
 
@@ -15,7 +15,7 @@ export default function PermanentRecruitmentPage() {
       image="/images/services/permanent-recruitment.jpg"
       imageAlt="Permanent recruitment interview"
       intro={[
-        "Finding the right permanent hire is a strategic decision — not just a vacancy to fill. AxiomRise partners with organizations to source, assess, and secure professionals who will drive long-term value.",
+        "Finding the right permanent hire is a strategic decision — not just a vacancy to fill. Axiom Rise partners with organizations to source, assess, and secure professionals who will drive long-term value.",
         "We combine deep market intelligence with a rigorous screening process to present a curated shortlist of candidates who align with your culture, competencies, and growth ambitions.",
       ]}
       features={[

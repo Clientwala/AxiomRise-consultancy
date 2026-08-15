@@ -3,7 +3,7 @@ import ServicesGrid from "@/components/sections/ServicesGrid";
 import WhyUs from "@/components/sections/WhyUs";
 
 export const metadata: Metadata = {
-  title: "Our Services — AxiomRise Consultancy",
+  title: "Our Services — Axiom Rise Consultancy",
   description: "Employment agency, management consultancy, corporate services, and executive search — from company incorporation and payroll administration to permanent recruitment.",
 };
 

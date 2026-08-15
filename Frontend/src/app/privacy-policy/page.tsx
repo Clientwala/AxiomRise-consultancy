@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — AxiomRise Consultancy",
+  title: "Privacy Policy — Axiom Rise Consultancy",
   description: "Privacy Policy for Axiom Rise Consultancy Pte. Ltd. — how we collect, use, and protect your personal data.",
 };
 
@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
           <div className="space-y-8 text-muted leading-relaxed text-sm">
             <section>
               <h2 className="font-serif text-xl text-primary mb-3">1. Introduction</h2>
-              <p>Axiom Rise Consultancy Pte. Ltd. (&quot;AxiomRise,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting your personal data in accordance with the Personal Data Protection Act 2012 (PDPA) of Singapore. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+              <p>Axiom Rise Consultancy Pte. Ltd. (&quot;Axiom Rise,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting your personal data in accordance with the Personal Data Protection Act 2012 (PDPA) of Singapore. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
             </section>
 
             <section>

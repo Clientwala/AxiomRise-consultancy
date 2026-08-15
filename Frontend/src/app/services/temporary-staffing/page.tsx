@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/sections/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Temporary Staffing — AxiomRise Consultancy",
+  title: "Temporary Staffing — Axiom Rise Consultancy",
   description: "Flexible temporary staffing solutions scaled to your seasonal, project, and peak-period workforce demands.",
 };
 
@@ -15,7 +15,7 @@ export default function TemporaryStaffingPage() {
       image="/images/services/hr-manager-reviewing-cvs.jpg"
       imageAlt="HR manager reviewing candidate profiles"
       intro={[
-        "Business demands fluctuate. AxiomRise provides flexible temporary staffing that lets you scale your workforce up or down — quickly and cost-effectively — without compromising on quality.",
+        "Business demands fluctuate. Axiom Rise provides flexible temporary staffing that lets you scale your workforce up or down — quickly and cost-effectively — without compromising on quality.",
         "From short-term projects to seasonal surges, we deploy pre-vetted professionals who can contribute from day one.",
       ]}
       features={[

@@ -5,12 +5,12 @@ import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import {
   PeopleIcon, UploadIcon, PenIcon, ChartIcon, BellIcon,
-  BuildingIcon, DocumentIcon, CompassIcon, WalletIcon, ScaleIcon,
+  DocumentIcon, CompassIcon, WalletIcon, ScaleIcon,
 } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
-  title: "Management Consultancy — AxiomRise Consultancy",
-  description: "Boutique corporate services — company incorporation, secretarial, accounting, payroll administration, taxation, and compliance for businesses in Singapore and beyond.",
+  title: "Management Consultancy — Axiom Rise Consultancy",
+  description: "Corporate services — business advisory, work pass applications, payroll administration, accounting, and compliance for businesses in Singapore and beyond.",
 };
 
 const features = [
@@ -22,15 +22,11 @@ const features = [
 ];
 
 const serviceItems = [
-  { icon: BuildingIcon, title: "Company Incorporation", desc: "End-to-end Singapore company registration, including name reservation, structure advice, and bank account opening." },
-  { icon: DocumentIcon, title: "Company Secretarial", desc: "Annual filings, AGM preparation, board resolutions, and full compliance with ACRA requirements." },
   { icon: CompassIcon, title: "Representative Office Setup", desc: "Establish a presence in Singapore for foreign companies exploring the Asian market." },
   { icon: CompassIcon, title: "Business Advisory", desc: "Strategic guidance on market entry, regulatory landscape, and business structure optimization." },
-  { icon: BuildingIcon, title: "Offshore Company Formation", desc: "Jurisdiction selection and incorporation in key offshore financial centres for global operations." },
   { icon: DocumentIcon, title: "Work Pass / EP Applications", desc: "Employment Pass, S Pass, Work Permit applications and renewals managed end-to-end." },
   { icon: WalletIcon, title: "Payroll Administration", desc: "Monthly payroll processing, CPF submissions, IRAS compliance, and employee payslips managed with precision." },
   { icon: ScaleIcon, title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, management reporting, and audit support." },
-  { icon: ScaleIcon, title: "Taxation & Compliance", desc: "Corporate tax filing, GST registration and returns, ECI submissions, and tax planning." },
   { icon: ChartIcon, title: "Digital Bookkeeping Solutions", desc: "Cloud-based accounting and bookkeeping powered by leading platforms — real-time visibility into your financials." },
 ];
 
@@ -44,9 +40,6 @@ export default function ManagementConsultancyPage() {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary leading-tight max-w-3xl mx-auto">
             A Boutique Corporate Services Platform
           </h1>
-          <p className="section-subtitle mx-auto mt-5">
-            We make company incorporation and ongoing administration simple — so you can focus on growing your business while we handle the paperwork.
-          </p>
           <div className="mt-8">
             <Button href="/contact" variant="primary" size="lg">Talk to Our Consultants</Button>
           </div>
@@ -91,7 +84,7 @@ export default function ManagementConsultancyPage() {
       <section className="section-padding bg-primary text-center">
         <div className="container-max">
           <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">Let&apos;s Simplify Your Compliance</h2>
-          <p className="text-white/60 max-w-lg mx-auto mb-8">Talk to our consultants and discover how AxiomRise can streamline your corporate administration.</p>
+          <p className="text-white/60 max-w-lg mx-auto mb-8">Talk to our consultants and discover how Axiom Rise can streamline your corporate administration.</p>
           <Button href="/contact" variant="secondary" size="lg">Talk to Our Consultants</Button>
         </div>
       </section>

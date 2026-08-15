@@ -62,7 +62,7 @@ export default function ServiceDetail({ eyebrow, title, subtitle, image, imageAl
       <section className="section-padding bg-primary text-center">
         <div className="container-max">
           <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">Let&apos;s Discuss Your Requirements</h2>
-          <p className="text-white/60 max-w-lg mx-auto mb-8">Talk to our consultants and discover how AxiomRise can support your business.</p>
+          <p className="text-white/60 max-w-lg mx-auto mb-8">Talk to our consultants and discover how Axiom Rise can support your business.</p>
           <Button href="/contact" variant="secondary" size="lg">Get In Touch</Button>
         </div>
       </section>

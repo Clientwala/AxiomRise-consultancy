@@ -14,7 +14,7 @@ export default function WhyUs() {
   return (
     <section className="section-padding bg-primary">
       <div className="container-max text-center">
-        <SectionHeading centered eyebrow="Why Partner With Us" title="The AxiomRise Difference" subtitle="" className="[&_.eyebrow]:text-accent [&_.section-title]:text-white [&_.section-subtitle]:text-white/60" />
+        <SectionHeading centered eyebrow="Why Partner With Axiom Rise" title="Turning Partnerships into Possibilities" subtitle="" className="[&_.eyebrow]:text-accent [&_.section-title]:text-white [&_.section-subtitle]:text-white/60" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-8">
           {reasons.map((r, i) => (
             <motion.div key={r.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.12, duration: 0.4 }} className="text-center">

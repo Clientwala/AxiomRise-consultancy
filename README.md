@@ -1,4 +1,4 @@
-# AxiomRise Consultancy
+# Axiom Rise Consultancy
 
 **Talent, Strategy, and Governance — Under One Roof.**
 
@@ -11,8 +11,8 @@ Axiom Rise Consultancy Pte. Ltd. is a Singapore-incorporated **Talent & HR Solut
 | Detail | Value |
 |--------|-------|
 | **Legal Name** | Axiom Rise Consultancy Pte. Ltd. |
-| **UEN** | 202611282W |
-| **EA Licence No.** | 24C2078 |
+| **UEN** | 202614733G |
+| **EA Licence No.** | 26S3550 |
 | **Registered Address** | 749 Woodlands Circle, #12-616, Singapore 730749 |
 | **Contact Email** | latha@axiomrise.sg |
 
@@ -20,7 +20,7 @@ Axiom Rise Consultancy Pte. Ltd. is a Singapore-incorporated **Talent & HR Solut
 
 ## 🌐 Live Site
 
-[axiomrise.com.sg](https://axiomrise.com.sg) _(deploy to Vercel for production)_
+[Axiom Rise.com.sg](https://Axiom Rise.com.sg) _(deploy to Vercel for production)_
 
 ---
 
@@ -66,7 +66,7 @@ Axiom Rise Consultancy Pte. Ltd. is a Singapore-incorporated **Talent & HR Solut
 axiomrise-consultancy/
 ├── Frontend/                    # Next.js 15 (App Router)
 │   ├── public/
-│   │   ├── logo/               # AxiomRise logo
+│   │   ├── logo/               # Axiom Rise logo
 │   │   └── images/             # Hero / About / Services / Team photos
 │   └── src/
 │       ├── app/                # Pages (Home, About, Services, Contact, Management Consultancy)

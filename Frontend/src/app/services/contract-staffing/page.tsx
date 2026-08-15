@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/sections/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Contract Staffing — AxiomRise Consultancy",
+  title: "Contract Staffing — Axiom Rise Consultancy",
   description: "Specialist contract staffing (out-staffing) for long-term initiatives requiring niche expertise and continuity.",
 };
 
@@ -15,7 +15,7 @@ export default function ContractStaffingPage() {
       image="/images/services/partners-collaboration.jpg"
       imageAlt="Business partners collaborating on a project"
       intro={[
-        "Some projects demand specialised skills for a defined period — without the long-term commitment of a permanent hire. AxiomRise contract staffing delivers exactly that.",
+        "Some projects demand specialised skills for a defined period — without the long-term commitment of a permanent hire. Axiom Rise contract staffing delivers exactly that.",
         "We provide experienced contract professionals who integrate seamlessly with your team, delivering specialist capability precisely when and where you need it.",
       ]}
       features={[

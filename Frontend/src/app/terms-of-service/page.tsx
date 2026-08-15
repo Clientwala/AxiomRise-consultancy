@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — AxiomRise Consultancy",
+  title: "Terms of Service — Axiom Rise Consultancy",
   description: "Terms of Service governing the use of the Axiom Rise Consultancy Pte. Ltd. website and services.",
 };
 
@@ -17,12 +17,12 @@ export default function TermsPage() {
           <div className="space-y-8 text-muted leading-relaxed text-sm">
             <section>
               <h2 className="font-serif text-xl text-primary mb-3">1. Acceptance of Terms</h2>
-              <p>By accessing or using the AxiomRise website and services, you agree to be bound by these Terms of Service. If you do not agree, please discontinue use of the website.</p>
+              <p>By accessing or using the Axiom Rise website and services, you agree to be bound by these Terms of Service. If you do not agree, please discontinue use of the website.</p>
             </section>
 
             <section>
               <h2 className="font-serif text-xl text-primary mb-3">2. Our Services</h2>
-              <p>Axiom Rise Consultancy Pte. Ltd. provides employment agency, management consultancy, corporate services, and talent solutions. Specific engagements are governed by separate written agreements between AxiomRise and the client.</p>
+              <p>Axiom Rise Consultancy Pte. Ltd. provides employment agency, management consultancy, corporate services, and talent solutions. Specific engagements are governed by separate written agreements between Axiom Rise and the client.</p>
             </section>
 
             <section>
@@ -32,12 +32,12 @@ export default function TermsPage() {
 
             <section>
               <h2 className="font-serif text-xl text-primary mb-3">4. Intellectual Property</h2>
-              <p>All content on this website, including text, graphics, logos, images, and software, is the property of AxiomRise or its licensors and is protected by intellectual property laws. You may not reproduce or distribute any content without prior written consent.</p>
+              <p>All content on this website, including text, graphics, logos, images, and software, is the property of Axiom Rise or its licensors and is protected by intellectual property laws. You may not reproduce or distribute any content without prior written consent.</p>
             </section>
 
             <section>
               <h2 className="font-serif text-xl text-primary mb-3">5. Limitation of Liability</h2>
-              <p>This website and its content are provided on an &quot;as is&quot; basis. To the fullest extent permitted by law, AxiomRise shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of, or inability to use, this website.</p>
+              <p>This website and its content are provided on an &quot;as is&quot; basis. To the fullest extent permitted by law, Axiom Rise shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of, or inability to use, this website.</p>
             </section>
 
             <section>

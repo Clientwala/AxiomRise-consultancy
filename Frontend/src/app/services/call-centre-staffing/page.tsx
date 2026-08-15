@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/sections/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Call Centre Staffing — AxiomRise Consultancy",
+  title: "Call Centre Staffing — Axiom Rise Consultancy",
   description: "Scalable call centre and customer-experience staffing — deploy trained teams to elevate service delivery across the region.",
 };
 
@@ -15,7 +15,7 @@ export default function CallCentreStaffingPage() {
       image="/images/services/women-outdoors.jpg"
       imageAlt="Customer service professionals"
       intro={[
-        "Exceptional customer experience starts with the right people. AxiomRise builds and deploys call centre and customer-support teams that represent your brand with professionalism and care.",
+        "Exceptional customer experience starts with the right people. Axiom Rise builds and deploys call centre and customer-support teams that represent your brand with professionalism and care.",
         "From individual agents to full teams, we scale your customer-service capability rapidly — with training, supervision, and quality assurance built in.",
       ]}
       features={[

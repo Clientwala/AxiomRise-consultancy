@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/sections/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Payroll Administration — AxiomRise Consultancy",
+  title: "Payroll Administration — Axiom Rise Consultancy",
   description: "Accurate monthly payroll administration — CPF submissions, IRAS compliance, and employee payslips managed with precision.",
 };
 
@@ -15,7 +15,7 @@ export default function PayrollAdministrationPage() {
       image="/images/services/data-analytics.jpg"
       imageAlt="Payroll data analysis"
       intro={[
-        "Payroll errors erode trust and expose your business to penalties. AxiomRise manages your payroll end-to-end — accurately, confidentially, and always on schedule.",
+        "Payroll errors erode trust and expose your business to penalties. Axiom Rise manages your payroll end-to-end — accurately, confidentially, and always on schedule.",
         "We handle calculations, statutory submissions, and reporting, giving you complete peace of mind and full compliance with Singapore regulations.",
       ]}
       features={[

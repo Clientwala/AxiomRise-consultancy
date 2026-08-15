@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetail from "@/components/sections/ServiceDetail";
 
 export const metadata: Metadata = {
-  title: "Executive Search — AxiomRise Consultancy",
+  title: "Executive Search — Axiom Rise Consultancy",
   description: "Confidential C-suite and board-level executive search, powered by deep regional networks and market insight.",
 };
 
@@ -15,7 +15,7 @@ export default function ExecutiveSearchPage() {
       image="/images/services/business-discussion.jpg"
       imageAlt="Executive leadership discussion"
       intro={[
-        "Leadership appointments define the trajectory of an organization. AxiomRise conducts confidential, senior-level searches that identify leaders capable of shaping strategy and driving transformation.",
+        "Leadership appointments define the trajectory of an organization. Axiom Rise conducts confidential, senior-level searches that identify leaders capable of shaping strategy and driving transformation.",
         "We work discreetly with boards and executive teams to map the market, engage exceptional candidates, and secure appointments that create lasting impact.",
       ]}
       features={[

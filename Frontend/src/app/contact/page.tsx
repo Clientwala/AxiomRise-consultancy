@@ -5,8 +5,8 @@ import MapEmbed from "@/components/sections/MapEmbed";
 import { HiMapPin, HiEnvelope, HiClock } from "react-icons/hi2";
 
 export const metadata: Metadata = {
-  title: "Contact Us — AxiomRise Consultancy",
-  description: "Get in touch with AxiomRise Consultancy. 749 Woodlands Circle, #12-616, Singapore 730749. Email: info@axiomrise.sg.",
+  title: "Contact Us — Axiom Rise Consultancy",
+  description: "Get in touch with Axiom Rise Consultancy. 749 Woodlands Circle, #12-616, Singapore 730749. Email: info@axiomrise.sg.",
 };
 
 export default function ContactPage() {
@@ -60,8 +60,8 @@ export default function ContactPage() {
                   <h4 className="font-semibold text-primary text-sm mb-2">Company Info</h4>
                   <p className="text-xs text-muted leading-relaxed">
                     Axiom Rise Consultancy Pte. Ltd.<br />
-                    UEN: 202611282W<br />
-                    EA Licence No.: 24C2078
+                    UEN: 202614733G<br />
+                    EA Licence No.: 26S3550
                   </p>
                 </div>
               </div>

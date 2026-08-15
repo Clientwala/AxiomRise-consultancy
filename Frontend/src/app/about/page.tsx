@@ -4,8 +4,8 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "About Us — AxiomRise Consultancy",
-  description: "Axiom Rise Pte. Ltd. is a Singapore-incorporated employment agency and management consultancy firm. UEN: 202611282W, EA Licence No.: 24C2078.",
+  title: "About Us — Axiom Rise Consultancy",
+  description: "Axiom Rise Pte. Ltd. is a Singapore-incorporated employment agency and management consultancy firm. UEN: 202614733G, EA Licence No.: 26S3550.",
 };
 
 export default function AboutPage() {
@@ -25,7 +25,7 @@ export default function AboutPage() {
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <Image src="/images/about/boardroom-brainstorm.jpg" alt="AxiomRise leadership discussion" width={600} height={450} className="w-full h-full object-cover" />
+              <Image src="/images/about/boardroom-brainstorm.jpg" alt="Axiom Rise leadership discussion" width={600} height={450} className="w-full h-full object-cover" />
             </div>
             <div>
               <SectionHeading eyebrow="Who We Are" title="Advisory Excellence for Business Growth" />
@@ -36,8 +36,8 @@ export default function AboutPage() {
                 We connect exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth. Our portfolio spans management consultancy, corporate services — including incorporation, secretarial, payroll administration, accounting and compliance — alongside executive search and specialist staffing.
               </p>
               <div className="grid grid-cols-2 gap-4 text-sm text-muted border-t border-border pt-6">
-                <div><span className="block text-primary font-semibold">UEN</span>202611282W</div>
-                <div><span className="block text-primary font-semibold">EA Licence</span>24C2078</div>
+                <div><span className="block text-primary font-semibold">UEN</span>202614733G</div>
+                <div><span className="block text-primary font-semibold">EA Licence</span>26S3550</div>
                 <div><span className="block text-primary font-semibold">Incorporation</span>2026</div>
                 <div><span className="block text-primary font-semibold">Headquarters</span>Singapore</div>
               </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
       <section className="section-padding bg-primary text-center">
         <div className="container-max">
           <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">Ready to Work With Us?</h2>
-          <p className="text-white/60 max-w-lg mx-auto mb-8">Let&apos;s discuss how AxiomRise can help your business grow.</p>
+          <p className="text-white/60 max-w-lg mx-auto mb-8">Let&apos;s discuss how Axiom Rise can help your business grow.</p>
           <Button href="/contact" variant="secondary" size="lg">Get In Touch</Button>
         </div>
       </section>
