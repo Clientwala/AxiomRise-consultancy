@@ -12,7 +12,16 @@ export default function JotFormEmbed() {
     const container = containerRef.current;
     if (!container) return;
 
-    // Lazy-load the JotForm script only when the form scrolls near the viewport
+    // Detect when the form actually renders (content appears in container)
+    const mutationObserver = new MutationObserver(() => {
+      if (container.children.length > 0) {
+        setLoaded(true);
+        mutationObserver.disconnect();
+      }
+    });
+    mutationObserver.observe(container, { childList: true, subtree: true });
+
+    // Lazy-load the JotForm script when it scrolls near the viewport
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -21,7 +30,6 @@ export default function JotFormEmbed() {
             script.type = "text/javascript";
             script.src = JOTFORM_URL;
             script.async = true;
-            script.onload = () => setLoaded(true);
             container.appendChild(script);
             observer.disconnect();
           }
@@ -31,7 +39,15 @@ export default function JotFormEmbed() {
     );
 
     observer.observe(container);
-    return () => observer.disconnect();
+
+    // Fallback: reveal after 15s even if detection fails
+    const fallbackTimer = setTimeout(() => setLoaded(true), 15000);
+
+    return () => {
+      observer.disconnect();
+      mutationObserver.disconnect();
+      clearTimeout(fallbackTimer);
+    };
   }, []);
 
   return (
