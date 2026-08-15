@@ -37,7 +37,7 @@ export default function Hero() {
                   <Image src="/images/hero/ipad-meeting.jpg" alt="Digital collaboration session" width={400} height={500} className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" loading="lazy" />
                 </motion.div>
               </motion.div>
-              <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 7, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }} className="space-y-3 md:space-y-4 pt-6 md:pt-8">
+              <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 7, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }} className="space-y-3 md:space-y-4 pt-6 md:pt-8 -ml-4 md:-ml-6 relative z-10">
                 <motion.div custom={2} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/5] group">
                   <Image src="/images/hero/ceo-office.jpg" alt="Executive office" width={400} height={500} className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" loading="lazy" />
                 </motion.div>

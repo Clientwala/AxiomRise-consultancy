@@ -31,7 +31,7 @@ export default function ServiceDetail({ eyebrow, title, subtitle, image, imageAl
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
-              <Image src={image} alt={imageAlt} width={600} height={450} className="w-full h-full object-cover" />
+              <Image src={image} alt={imageAlt} width={600} height={450} className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div>
               <SectionHeading eyebrow="Overview" title="What We Deliver" />

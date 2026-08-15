@@ -17,4 +17,15 @@
   .section-title { @apply font-serif text-3xl md:text-4xl lg:text-5xl text-primary leading-tight; }
   .section-subtitle { @apply text-muted text-base md:text-lg max-w-2xl mt-4 leading-relaxed; }
   .card-hover { @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1; }
+
+  /* JotForm responsive */
+  .jotform-container form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .jotform-container input,
+  .jotform-container textarea,
+  .jotform-container select {
+    max-width: 100% !important;
+  }
 }
