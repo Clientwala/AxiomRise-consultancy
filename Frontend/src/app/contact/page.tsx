@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SectionHeading from "@/components/ui/SectionHeading";
-import ContactForm from "@/components/sections/ContactForm";
+import JotFormEmbed from "@/components/sections/JotFormEmbed";
 import MapEmbed from "@/components/sections/MapEmbed";
 import { HiMapPin, HiEnvelope, HiClock } from "react-icons/hi2";
 
@@ -28,7 +28,7 @@ export default function ContactPage() {
             {/* Form */}
             <div className="lg:col-span-2">
               <SectionHeading title="Send Us a Message" />
-              <ContactForm />
+              <JotFormEmbed />
             </div>
             {/* Contact Details */}
             <div className="lg:col-span-1">

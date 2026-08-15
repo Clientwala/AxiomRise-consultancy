@@ -2,6 +2,13 @@ import { NextResponse } from "next/server";
 import dbConnect from "@/lib/mongodb";
 import Contact from "@/lib/models/Contact";
 
+/**
+ * DEPRECATED: The contact form now uses the JotForm embed
+ * (see src/components/sections/JotFormEmbed.tsx).
+ * This API route is no longer called — all contact form submissions
+ * now go directly to JotForm in real time.
+ * Kept here only as a fallback if MongoDB storage is needed again.
+ */
 export async function POST(request: Request) {
   try {
     const body = await request.json();
