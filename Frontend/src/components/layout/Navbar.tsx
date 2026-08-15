@@ -56,7 +56,10 @@ export default function Navbar() {
           </span>
           <span className="leading-tight">
             <span className="block font-serif font-semibold text-primary text-xl md:text-2xl tracking-tight">Axiom Rise</span>
-            <span className="block text-[8px] md:text-[9px] font-medium text-muted uppercase tracking-[0.16em] md:tracking-[0.2em]">Advisory Excellence</span>
+            <span className="block text-[8px] md:text-[9px] font-medium text-muted uppercase tracking-[0.16em] md:tracking-[0.2em]">
+              <span className="sm:hidden">Employment &amp; Management Consultancy</span>
+              <span className="hidden sm:inline">Employment Agency &amp; Management Consultancy</span>
+            </span>
           </span>
         </Link>
 

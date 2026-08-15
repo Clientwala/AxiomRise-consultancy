@@ -8,7 +8,7 @@ const imgFade = { hidden: { opacity: 0, scale: 0.96 }, visible: (i: number) => (
 
 export default function Hero() {
   return (
-    <section className="relative bg-soft overflow-hidden pt-24 md:pt-28">
+    <section className="relative bg-gradient-to-br from-blue-100 to-blue-200 overflow-hidden pt-24 md:pt-28">
       <div className="container-max px-6 lg:px-20 xl:px-28 py-12 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left Content */}
@@ -29,24 +29,24 @@ export default function Hero() {
           {/* Right Image Collage */}
           <div className="relative">
             <div className="grid grid-cols-2 gap-3 md:gap-4">
-              <div className="space-y-3 md:space-y-4">
-                <motion.div custom={0} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/3]">
-                  <Image src="/images/hero/boardroom-brainstorm.jpg" alt="Strategic advisory meeting" width={400} height={300} className="w-full h-full object-cover" priority />
+              <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 6, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }} className="space-y-3 md:space-y-4">
+                <motion.div custom={0} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/3] group">
+                  <Image src="/images/hero/boardroom-brainstorm.jpg" alt="Strategic advisory meeting" width={400} height={300} className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" priority />
                 </motion.div>
-                <motion.div custom={1} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/5]">
-                  <Image src="/images/hero/ipad-meeting.jpg" alt="Digital collaboration session" width={400} height={500} className="w-full h-full object-cover" loading="lazy" />
+                <motion.div custom={1} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/5] group">
+                  <Image src="/images/hero/ipad-meeting.jpg" alt="Digital collaboration session" width={400} height={500} className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" loading="lazy" />
                 </motion.div>
-              </div>
-              <div className="space-y-3 md:space-y-4 pt-6 md:pt-8">
-                <motion.div custom={2} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/5]">
-                  <Image src="/images/hero/ceo-office.jpg" alt="Executive office" width={400} height={500} className="w-full h-full object-cover" loading="lazy" />
+              </motion.div>
+              <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 7, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }} className="space-y-3 md:space-y-4 pt-6 md:pt-8">
+                <motion.div custom={2} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/5] group">
+                  <Image src="/images/hero/ceo-office.jpg" alt="Executive office" width={400} height={500} className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" loading="lazy" />
                 </motion.div>
-                <motion.div custom={3} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/3]">
-                  <Image src="/images/hero/night-meeting.jpg" alt="Leadership strategy session" width={400} height={300} className="w-full h-full object-cover" loading="lazy" />
+                <motion.div custom={3} initial="hidden" animate="visible" variants={imgFade} className="rounded-2xl overflow-hidden shadow-md aspect-[4/3] group">
+                  <Image src="/images/hero/night-meeting.jpg" alt="Leadership strategy session" width={400} height={300} className="w-full h-full object-cover grayscale-[35%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" loading="lazy" />
                 </motion.div>
-              </div>
+              </motion.div>
             </div>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9, duration: 0.6 }} className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/10 rounded-full -z-10" />
+            <motion.div animate={{ opacity: [0.4, 1, 0.4] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/15 rounded-full -z-10" />
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import VisitorTracker from "@/components/sections/VisitorTracker";
 import CookieBanner from "@/components/sections/CookieBanner";
+import WhatsAppButton from "@/components/sections/WhatsAppButton";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppButton />
         <CookieBanner />
         <Toaster position="bottom-right" toastOptions={{ style: { borderRadius: "12px", background: "#0B2545", color: "#fff" } }} />
       </body>

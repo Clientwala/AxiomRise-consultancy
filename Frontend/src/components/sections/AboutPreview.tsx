@@ -11,7 +11,7 @@ export default function AboutPreview() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.6 }}>
             <SectionHeading
               eyebrow="Who We Are"
-              title="Advisory Excellence, Delivered With Purpose"
+              title="Insight. Integrity. Impact."
               subtitle="Axiom Rise is a Singapore-incorporated employment agency and management consultancy firm. We connect exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth across the region."
             />
           </motion.div>

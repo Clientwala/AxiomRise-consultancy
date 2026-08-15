@@ -70,9 +70,10 @@ export default function ManagementConsultancyPage() {
           <SectionHeading centered eyebrow="Our Services" title="Complete Corporate Solutions" subtitle="Everything you need to incorporate, manage, and grow your company — all under one roof." />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
             {serviceItems.map((s, i) => (
-              <Card key={s.title} className="group">
-                <div className="text-accent mb-3"><s.icon size={24} /></div>
-                <h3 className="font-serif text-lg font-semibold text-primary mb-2">{s.title}</h3>
+              <Card key={s.title} className="group relative overflow-hidden">
+                <div className="absolute inset-x-0 top-0 h-[3px] bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <div className="text-accent mb-3 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300"><s.icon size={26} /></div>
+                <h3 className="font-serif text-lg font-semibold text-primary mb-2 group-hover:text-accent-dark transition-colors duration-300">{s.title}</h3>
                 <p className="text-sm text-muted leading-relaxed">{s.desc}</p>
               </Card>
             ))}

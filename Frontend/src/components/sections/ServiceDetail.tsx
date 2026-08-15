@@ -43,15 +43,23 @@ export default function ServiceDetail({ eyebrow, title, subtitle, image, imageAl
         </div>
       </section>
 
-      {/* Features */}
+      {/* Features / Our Approach */}
       <section className="section-padding bg-soft-light">
         <div className="container-max">
           <SectionHeading centered eyebrow="What's Included" title="Our Approach" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 max-w-5xl mx-auto">
-            {features.map((f) => (
-              <div key={f.title} className="bg-white rounded-xl border border-border p-6">
-                <h3 className="font-serif text-lg font-semibold text-primary mb-2">{f.title}</h3>
-                <p className="text-sm text-muted leading-relaxed">{f.desc}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 max-w-6xl mx-auto">
+            {features.map((f, i) => (
+              <div key={f.title} className="relative group">
+                <div className="bg-white rounded-xl border border-border p-6 h-full text-center shadow-sm group-hover:shadow-lg group-hover:border-accent/40 group-hover:-translate-y-1 transition-all duration-300">
+                  <div className="w-11 h-11 mx-auto mb-4 rounded-full bg-primary text-white flex items-center justify-center font-serif font-bold text-lg group-hover:bg-accent transition-colors duration-300">{i + 1}</div>
+                  <h3 className="font-serif text-lg font-semibold text-primary mb-2">{f.title}</h3>
+                  <p className="text-sm text-muted leading-relaxed">{f.desc}</p>
+                </div>
+                {i < features.length - 1 && (
+                  <div className="hidden lg:flex absolute top-1/2 -right-7 -translate-y-1/2 text-accent z-10">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                  </div>
+                )}
               </div>
             ))}
           </div>
