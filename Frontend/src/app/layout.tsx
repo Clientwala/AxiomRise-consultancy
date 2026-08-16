@@ -46,10 +46,57 @@ export const viewport: Viewport = {
   themeColor: "#0B2545",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://axiom-rise-consultancy.vercel.app/#organization",
+  name: "Axiom Rise Consultancy Pte. Ltd.",
+  alternateName: "Axiom Rise",
+  legalName: "Axiom Rise Consultancy Pte. Ltd.",
+  description:
+    "Singapore-incorporated employment agency and management consultancy firm delivering advisory excellence, executive search, and corporate services.",
+  url: "https://axiom-rise-consultancy.vercel.app",
+  logo: "https://axiom-rise-consultancy.vercel.app/logo/axiomrise-logo.png",
+  image: "https://axiom-rise-consultancy.vercel.app/logo/axiomrise-logo.png",
+  telephone: "+6584801376",
+  email: "info@axiomrise.sg",
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "749 Woodlands Circle, #12-616",
+    addressLocality: "Singapore",
+    postalCode: "730749",
+    addressCountry: "SG",
+  },
+  areaServed: { "@type": "Country", name: "Singapore" },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "18:00",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+6584801376",
+    contactType: "customer service",
+    email: "info@axiomrise.sg",
+    availableLanguage: ["English"],
+  },
+  sameAs: ["https://www.linkedin.com/in/axiom-rise-330054406/"],
+  identifier: [
+    { "@type": "PropertyValue", name: "UEN", value: "202614733G" },
+    { "@type": "PropertyValue", name: "EA Licence No.", value: "26S3550" },
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <VisitorTracker />
         <Navbar />
         <main className="flex-1">{children}</main>

@@ -2,11 +2,32 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
+import { CompassIcon, ScaleIcon, PeopleIcon } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
-  title: "About Us — Axiom Rise Consultancy",
-  description: "Axiom Rise Pte. Ltd. is a Singapore-incorporated employment agency and management consultancy firm. UEN: 202614733G, EA Licence No.: 26S3550.",
+  title: "About Us — Axiom Rise Consultancy | Singapore Employment Agency & Management Consultancy",
+  description:
+    "Axiom Rise Consultancy Pte. Ltd. is a Singapore-incorporated employment agency and management consultancy firm. UEN: 202614733G, EA Licence No.: 26S3550. Advisory excellence for business growth.",
+  keywords: [
+    "about Axiom Rise",
+    "Singapore employment agency",
+    "management consultancy Singapore",
+    "Axiom Rise Consultancy",
+    "EA licence Singapore",
+  ],
+  openGraph: {
+    title: "About Us — Axiom Rise Consultancy",
+    description:
+      "Singapore-incorporated employment agency and management consultancy firm delivering advisory excellence.",
+    type: "website",
+  },
 };
+
+const values = [
+  { icon: CompassIcon, title: "Strategic Counsel", desc: "We bring senior-level judgment to complex decisions, helping leaders act with clarity and confidence." },
+  { icon: ScaleIcon, title: "Relentless Rigour", desc: "Every recommendation is grounded in analysis, market insight, and measurable outcomes." },
+  { icon: PeopleIcon, title: "Lasting Partnerships", desc: "We build enduring relationships founded on trust, discretion, and a shared commitment to success." },
+];
 
 export default function AboutPage() {
   return (
@@ -46,23 +67,21 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership Section */}
+      {/* Our Values */}
       <section className="section-padding bg-soft-light">
         <div className="container-max">
           <SectionHeading centered eyebrow="Our Values" title="How We Work" subtitle="Discretion, integrity, and a relentless focus on outcomes guide every engagement." />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 max-w-5xl mx-auto text-center">
-            <div>
-              <h3 className="font-serif text-lg text-primary font-semibold mb-2">Strategic Counsel</h3>
-              <p className="text-sm text-muted leading-relaxed">We bring senior-level judgment to complex decisions, helping leaders act with clarity and confidence.</p>
-            </div>
-            <div>
-              <h3 className="font-serif text-lg text-primary font-semibold mb-2">Relentless Rigour</h3>
-              <p className="text-sm text-muted leading-relaxed">Every recommendation is grounded in analysis, market insight, and measurable outcomes.</p>
-            </div>
-            <div>
-              <h3 className="font-serif text-lg text-primary font-semibold mb-2">Lasting Partnerships</h3>
-              <p className="text-sm text-muted leading-relaxed">We build enduring relationships founded on trust, discretion, and a shared commitment to success.</p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
+            {values.map((v, i) => (
+              <div key={v.title} className="group relative overflow-hidden bg-white rounded-2xl border border-border p-8 text-center shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-accent/40 transition-all duration-300">
+                <div className="absolute inset-x-0 top-0 h-1 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <div className="w-16 h-16 mx-auto mb-5 rounded-2xl bg-soft flex items-center justify-center text-accent group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <v.icon size={30} />
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-primary mb-3">{v.title}</h3>
+                <p className="text-sm text-muted leading-relaxed">{v.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
