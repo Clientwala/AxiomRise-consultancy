@@ -22,7 +22,6 @@ export default function AccountingServicesPage() {
         { title: "Bookkeeping", desc: "Day-to-day recording of transactions, reconciliations, and ledgers kept current." },
         { title: "Financial Statements", desc: "Accurate preparation of balance sheets, income statements, and reports." },
         { title: "Management Reporting", desc: "Clear, timely insights into your business performance and cash flow." },
-        { title: "Audit Support", desc: "Audit-ready records and liaison with external auditors when needed." },
       ]}
     />
   );

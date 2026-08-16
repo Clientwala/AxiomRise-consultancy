@@ -12,7 +12,7 @@ import {
 const services = [
   { title: "Management Consultancy", desc: "End-to-end company incorporation, secretarial, and compliance support — from strategy to statutory administration.", icon: BuildingIcon, img: "/images/services/management-consultancy.jpg", href: "/services/management-consultancy" },
   { title: "Payroll Administration", desc: "Accurate monthly payroll processing, CPF submissions, and statutory compliance managed with precision.", icon: WalletIcon, img: "/images/services/data-analytics.jpg", href: "/services/payroll-administration" },
-  { title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, management reporting, and audit-ready records.", icon: ScaleIcon, img: "/images/services/accounting-services.jpg", href: "/services/accounting-services" },
+  { title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, and management reporting.", icon: ScaleIcon, img: "/images/services/accounting-services.jpg", href: "/services/accounting-services" },
   { title: "Permanent Recruitment", desc: "Executive-level talent acquisition for mid to senior roles across industries and disciplines.", icon: BriefcaseIcon, img: "/images/services/permanent-recruitment.jpg", href: "/services/permanent-recruitment" },
   { title: "Temporary Staffing", desc: "Agile workforce solutions scaled to your seasonal, project, and peak-period demands.", icon: ClockIcon, img: "/images/services/hr-manager-reviewing-cvs.jpg", href: "/services/temporary-staffing" },
   { title: "Contract Staffing", desc: "Specialist out-staffing for long-term initiatives requiring niche expertise and continuity.", icon: DocumentIcon, img: "/images/services/partners-collaboration.jpg", href: "/services/contract-staffing" },

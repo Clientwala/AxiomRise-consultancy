@@ -26,7 +26,7 @@ const serviceItems = [
   { icon: CompassIcon, title: "Business Advisory", desc: "Strategic guidance on market entry, regulatory landscape, and business structure optimization." },
   { icon: DocumentIcon, title: "Work Pass / EP Applications", desc: "Employment Pass, S Pass, Work Permit applications and renewals managed end-to-end." },
   { icon: WalletIcon, title: "Payroll Administration", desc: "Monthly payroll processing, CPF submissions, IRAS compliance, and employee payslips managed with precision." },
-  { icon: ScaleIcon, title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, management reporting, and audit support." },
+  { icon: ScaleIcon, title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, and management reporting." },
   { icon: ChartIcon, title: "Digital Bookkeeping Solutions", desc: "Cloud-based accounting and bookkeeping powered by leading platforms — real-time visibility into your financials." },
 ];
 
