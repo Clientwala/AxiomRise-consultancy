@@ -11,6 +11,7 @@ const quickLinks = [
 const services = [
   { label: "Management Consultancy", href: "/services/management-consultancy" },
   { label: "Payroll Administration", href: "/services/payroll-administration" },
+  { label: "Accounting Services", href: "/services/accounting-services" },
   { label: "Permanent Recruitment", href: "/services/permanent-recruitment" },
   { label: "Temporary Staffing", href: "/services/temporary-staffing" },
   { label: "Contract Staffing", href: "/services/contract-staffing" },
