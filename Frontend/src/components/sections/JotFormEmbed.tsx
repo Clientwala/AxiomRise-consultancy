@@ -21,30 +21,18 @@ export default function JotFormEmbed() {
     });
     mutationObserver.observe(container, { childList: true, subtree: true });
 
-    // Lazy-load the JotForm script when it scrolls near the viewport
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const script = document.createElement("script");
-            script.type = "text/javascript";
-            script.src = JOTFORM_URL;
-            script.async = true;
-            container.appendChild(script);
-            observer.disconnect();
-          }
-        });
-      },
-      { rootMargin: "250px" }
-    );
+    // Load the JotForm script immediately so its CDN resources start
+    // loading right away (gives them time before the user reaches the form)
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = JOTFORM_URL;
+    script.async = true;
+    container.appendChild(script);
 
-    observer.observe(container);
-
-    // Fallback: reveal after 15s even if detection fails
-    const fallbackTimer = setTimeout(() => setLoaded(true), 15000);
+    // Fallback: reveal after 20s even if detection fails
+    const fallbackTimer = setTimeout(() => setLoaded(true), 20000);
 
     return () => {
-      observer.disconnect();
       mutationObserver.disconnect();
       clearTimeout(fallbackTimer);
     };
