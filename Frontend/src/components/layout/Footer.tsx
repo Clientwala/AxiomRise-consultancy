@@ -34,7 +34,7 @@ export default function Footer() {
         {/* Subtle business background image */}
         <div className="absolute inset-0 bg-cover bg-center opacity-[0.06]" style={{ backgroundImage: "url('/images/about/colleagues-desks.jpg')" }} />
         {/* Light blue overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-200/95 to-blue-300/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-300/95 to-blue-400/95" />
 
         <div className="relative container-max px-6 lg:px-20 xl:px-28 py-16 md:py-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
@@ -94,7 +94,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="bg-blue-300/80 border-t border-white/60">
+      <div className="bg-blue-400/80 border-t border-white/60">
         <div className="container-max px-6 lg:px-20 xl:px-28 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-primary/60">&copy; {new Date().getFullYear()} Axiom Rise Consultancy Pte. Ltd. All rights reserved.</p>
           <div className="flex items-center gap-6">
