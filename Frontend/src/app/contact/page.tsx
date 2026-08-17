@@ -28,6 +28,7 @@ export default function ContactPage() {
             {/* Form */}
             <div className="lg:col-span-2">
               <SectionHeading title="Send Us a Message" />
+              <p className="text-muted text-sm mb-6 -mt-2">Tell us about your hiring or business requirements. Our team will work with you to understand your needs and recommend the right solution.</p>
               <JotFormEmbed />
             </div>
             {/* Contact Details */}

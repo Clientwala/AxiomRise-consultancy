@@ -5,7 +5,7 @@ import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import {
   PeopleIcon, UploadIcon, PenIcon, ChartIcon, BellIcon,
-  DocumentIcon, CompassIcon, WalletIcon, ScaleIcon,
+  DocumentIcon, CompassIcon, WalletIcon, ScaleIcon, ShieldIcon, BuildingIcon,
 } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
@@ -22,9 +22,14 @@ const features = [
 ];
 
 const serviceItems = [
+  { icon: CompassIcon, title: "Business Advisory", desc: "Practical guidance on market entry, regulatory requirements, business structures, and operational planning to support your business objectives." },
+  { icon: DocumentIcon, title: "Corporate & Business Administration", desc: "Day-to-day corporate administration, record-keeping, and business documentation support." },
+  { icon: PeopleIcon, title: "HR & Workforce Advisory", desc: "Practical guidance on HR policies, workforce planning, and people management." },
+  { icon: ShieldIcon, title: "Compliance & Regulatory Support", desc: "Support with regulatory requirements and compliance obligations for your business." },
+  { icon: ChartIcon, title: "Process & Operational Improvement", desc: "Streamlining workflows and operations to improve efficiency and productivity." },
+  { icon: BuildingIcon, title: "Business Setup & Expansion Support", desc: "Guidance on establishing and growing your business presence in Singapore and beyond." },
   { icon: CompassIcon, title: "Representative Office Setup", desc: "Establish a presence in Singapore for foreign companies exploring the Asian market." },
-  { icon: CompassIcon, title: "Business Advisory", desc: "Strategic guidance on market entry, regulatory landscape, and business structure optimization." },
-  { icon: DocumentIcon, title: "Work Pass / EP Applications", desc: "Employment Pass, S Pass, Work Permit applications and renewals managed end-to-end." },
+  { icon: DocumentIcon, title: "Work Pass & Employment Pass Services", desc: "Support with Employment Pass, S Pass, and Work Permit applications and renewals, including document preparation, submission support, and follow-up." },
   { icon: WalletIcon, title: "Payroll Administration", desc: "Monthly payroll processing, CPF submissions, IRAS compliance, and employee payslips managed with precision." },
   { icon: ScaleIcon, title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, and management reporting." },
   { icon: ChartIcon, title: "Digital Bookkeeping Solutions", desc: "Cloud-based accounting and bookkeeping powered by leading platforms — real-time visibility into your financials." },
@@ -38,8 +43,11 @@ export default function ManagementConsultancyPage() {
         <div className="container-max px-6 lg:px-20 xl:px-28 py-16 md:py-24 text-center">
           <Badge text="Corporate Services" variant="gold" className="mb-4" />
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-primary leading-tight max-w-3xl mx-auto">
-            A Boutique Corporate Services Platform
+            Boutique Corporate Services &amp; Business Solutions
           </h1>
+          <p className="section-subtitle mx-auto mt-5">
+            Practical corporate and business support designed to help you establish, manage, and grow your business in Singapore.
+          </p>
           <div className="mt-8">
             <Button href="/contact" variant="primary" size="lg">Talk to Our Consultants</Button>
           </div>
@@ -49,7 +57,7 @@ export default function ManagementConsultancyPage() {
       {/* Feature Strip */}
       <section className="section-padding bg-white">
         <div className="container-max">
-          <SectionHeading centered eyebrow="Platform" title="Collaborate With Our Team" subtitle="A streamlined approach to corporate services, built around your convenience." />
+          <SectionHeading centered eyebrow="Platform" title="Collaborate With Our Team" subtitle="A streamlined approach to corporate services, designed around your business needs and convenience." />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-8">
             {features.map((f, i) => (
               <div key={f.title} className="text-center px-3">
@@ -67,7 +75,7 @@ export default function ManagementConsultancyPage() {
       {/* Services Grid */}
       <section className="section-padding bg-soft-light">
         <div className="container-max">
-          <SectionHeading centered eyebrow="Our Services" title="Complete Corporate Solutions" subtitle="Everything you need to incorporate, manage, and grow your company — all under one roof." />
+          <SectionHeading centered eyebrow="Our Services" title="Complete Corporate &amp; Business Solutions" subtitle="Practical solutions to help you establish, manage, and grow your business — all under one roof." />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
             {serviceItems.map((s, i) => (
               <Card key={s.title} className="group relative overflow-hidden">

@@ -12,8 +12,10 @@ export default function AboutPreview() {
             <SectionHeading
               eyebrow="Who We Are"
               title="Insight. Integrity. Impact."
-              subtitle="Axiom Rise is a Singapore-incorporated employment agency and management consultancy firm. We connect exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth across the region."
+              subtitle="Axiom Rise is a Singapore-based employment agency and management consultancy dedicated to connecting businesses with the right people and practical business solutions."
             />
+            <p className="text-muted leading-relaxed mb-4">We support organizations across different industries with recruitment, staffing, payroll administration, executive search, and business support services. Our approach combines industry knowledge, market insight, technology, and a strong commitment to delivering reliable results.</p>
+            <p className="text-muted leading-relaxed">We believe successful businesses are built on the right people, effective processes, and trusted partnerships.</p>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30, scale: 0.97 }} whileInView={{ opacity: 1, x: 0, scale: 1 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.7, delay: 0.2 }} className="relative group">
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">

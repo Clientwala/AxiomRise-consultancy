@@ -11,12 +11,11 @@ export default function TemporaryStaffingPage() {
     <ServiceDetail
       eyebrow="Talent Solutions"
       title="Temporary Staffing"
-      subtitle="Agile, on-demand workforce solutions scaled to your seasonal, project, and peak-period demands."
+      subtitle="Flexible staffing solutions for businesses that need additional workforce support."
       image="/images/services/hr-manager-reviewing-cvs.jpg"
       imageAlt="HR manager reviewing candidate profiles"
       intro={[
-        "Business demands fluctuate. Axiom Rise provides flexible temporary staffing that lets you scale your workforce up or down — quickly and cost-effectively — without compromising on quality.",
-        "From short-term projects to seasonal surges, we deploy pre-vetted professionals who can contribute from day one.",
+        "Whether you require staff for seasonal demand, short-term projects, peak periods, or temporary vacancies, we help you access suitable talent quickly and efficiently while giving you the flexibility to scale your workforce as needed.",
       ]}
       features={[
         { title: "Rapid Deployment", desc: "Qualified temporary talent placed quickly to meet urgent demands." },

@@ -11,12 +11,11 @@ export default function ContractStaffingPage() {
     <ServiceDetail
       eyebrow="Talent Solutions"
       title="Contract Staffing"
-      subtitle="Specialist out-staffing for long-term initiatives requiring niche expertise, flexibility, and continuity."
+      subtitle="Flexible contract staffing solutions for businesses requiring skilled professionals for specific projects or longer-term assignments."
       image="/images/services/partners-collaboration.jpg"
       imageAlt="Business partners collaborating on a project"
       intro={[
-        "Some projects demand specialised skills for a defined period — without the long-term commitment of a permanent hire. Axiom Rise contract staffing delivers exactly that.",
-        "We provide experienced contract professionals who integrate seamlessly with your team, delivering specialist capability precisely when and where you need it.",
+        "We help organizations access specialized talent while providing greater flexibility in workforce planning, allowing you to scale your team according to business requirements.",
       ]}
       features={[
         { title: "Specialist Talent", desc: "Access niche skills across technology, finance, and operations." },

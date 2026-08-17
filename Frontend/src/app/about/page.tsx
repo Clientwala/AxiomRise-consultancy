@@ -70,7 +70,7 @@ export default function AboutPage() {
       {/* Our Values */}
       <section className="section-padding bg-soft-light">
         <div className="container-max">
-          <SectionHeading centered eyebrow="Our Values" title="How We Work" subtitle="Discretion, integrity, and a relentless focus on outcomes guide every engagement." />
+          <SectionHeading centered eyebrow="Our Values" title="How We Work" subtitle="Integrity, professionalism, responsiveness, and a strong focus on results guide every engagement." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
             {values.map((v, i) => (
               <div key={v.title} className="group relative overflow-hidden bg-white rounded-2xl border border-border p-8 text-center shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-accent/40 transition-all duration-300">

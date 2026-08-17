@@ -11,12 +11,11 @@ export default function PayrollAdministrationPage() {
     <ServiceDetail
       eyebrow="Corporate Services"
       title="Payroll Administration"
-      subtitle="Accurate, compliant payroll processing — so you can pay your people on time, every time."
+      subtitle="Reliable payroll and HR administration to help businesses manage their workforce efficiently."
       image="/images/services/data-analytics.jpg"
       imageAlt="Payroll data analysis"
       intro={[
-        "Payroll errors erode trust and expose your business to penalties. Axiom Rise manages your payroll end-to-end — accurately, confidentially, and always on schedule.",
-        "We handle calculations, statutory submissions, and reporting, giving you complete peace of mind and full compliance with Singapore regulations.",
+        "Our services include monthly payroll processing, CPF contribution administration, statutory requirements, employee records, and related payroll support — helping you maintain accurate and timely payroll operations.",
       ]}
       features={[
         { title: "Monthly Processing", desc: "Accurate salary calculations and disbursement management." },

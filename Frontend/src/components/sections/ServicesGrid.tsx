@@ -10,14 +10,14 @@ import {
 } from "@/components/ui/icons";
 
 const services = [
-  { title: "Management Consultancy", desc: "End-to-end company incorporation, secretarial, and compliance support — from strategy to statutory administration.", icon: BuildingIcon, img: "/images/services/management-consultancy.jpg", href: "/services/management-consultancy" },
+  { title: "Management Consultancy", desc: "Practical business solutions to help organizations manage their corporate, administrative, and operational needs effectively.", icon: BuildingIcon, img: "/images/services/management-consultancy.jpg", href: "/services/management-consultancy" },
   { title: "Payroll Administration", desc: "Accurate monthly payroll processing, CPF submissions, and statutory compliance managed with precision.", icon: WalletIcon, img: "/images/services/data-analytics.jpg", href: "/services/payroll-administration" },
   { title: "Accounting Services", desc: "Bookkeeping, financial statement preparation, and management reporting.", icon: ScaleIcon, img: "/images/services/accounting-services.jpg", href: "/services/accounting-services" },
   { title: "Permanent Recruitment", desc: "Executive-level talent acquisition for mid to senior roles across industries and disciplines.", icon: BriefcaseIcon, img: "/images/services/permanent-recruitment.jpg", href: "/services/permanent-recruitment" },
   { title: "Temporary Staffing", desc: "Agile workforce solutions scaled to your seasonal, project, and peak-period demands.", icon: ClockIcon, img: "/images/services/hr-manager-reviewing-cvs.jpg", href: "/services/temporary-staffing" },
   { title: "Contract Staffing", desc: "Specialist out-staffing for long-term initiatives requiring niche expertise and continuity.", icon: DocumentIcon, img: "/images/services/partners-collaboration.jpg", href: "/services/contract-staffing" },
   { title: "Executive Search", desc: "Confidential C-suite and board-level search, powered by deep regional networks and market insight.", icon: SearchIcon, img: "/images/services/business-discussion.jpg", href: "/services/executive-search" },
-  { title: "Call Centre Staffing", desc: "Scalable customer-experience teams deployed to elevate service delivery across the region.", icon: HeadsetIcon, img: "/images/services/women-outdoors.jpg", href: "/services/call-centre-staffing" },
+  { title: "Customer Service & Contact Centre Staffing", desc: "Flexible staffing solutions for customer service and contact centre operations.", icon: HeadsetIcon, img: "/images/services/women-outdoors.jpg", href: "/services/call-centre-staffing" },
 ];
 
 export default function ServicesGrid() {

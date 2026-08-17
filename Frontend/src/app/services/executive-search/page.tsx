@@ -11,12 +11,11 @@ export default function ExecutiveSearchPage() {
     <ServiceDetail
       eyebrow="Executive Search"
       title="Executive Search"
-      subtitle="Confidential C-suite and board-level search, powered by deep regional networks and market insight."
+      subtitle="Confidential executive search solutions for organizations seeking senior and leadership talent."
       image="/images/services/business-discussion.jpg"
       imageAlt="Executive leadership discussion"
       intro={[
-        "Leadership appointments define the trajectory of an organization. Axiom Rise conducts confidential, senior-level searches that identify leaders capable of shaping strategy and driving transformation.",
-        "We work discreetly with boards and executive teams to map the market, engage exceptional candidates, and secure appointments that create lasting impact.",
+        "We identify and engage high-calibre professionals for critical leadership positions through targeted sourcing, industry networks, market intelligence, and a discreet search process.",
       ]}
       features={[
         { title: "Market Mapping", desc: "Comprehensive analysis of leadership talent across the region." },

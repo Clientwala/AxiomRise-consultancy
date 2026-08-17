@@ -16,7 +16,7 @@ const services = [
   { label: "Temporary Staffing", href: "/services/temporary-staffing" },
   { label: "Contract Staffing", href: "/services/contract-staffing" },
   { label: "Executive Search", href: "/services/executive-search" },
-  { label: "Call Centre Staffing", href: "/services/call-centre-staffing" },
+  { label: "Customer Service & Contact Centre Staffing", href: "/services/call-centre-staffing" },
 ];
 
 export default function Footer() {
@@ -25,7 +25,10 @@ export default function Footer() {
       {/* CTA band */}
       <div className="bg-primary">
         <div className="container-max px-6 lg:px-20 xl:px-28 py-12 md:py-14 flex flex-col md:flex-row items-center justify-between gap-6">
-          <h2 className="font-serif text-2xl md:text-3xl text-white text-center md:text-left">Ready to Elevate Your Business?</h2>
+          <div className="text-center md:text-left">
+            <h2 className="font-serif text-2xl md:text-3xl text-white">Ready to Elevate Your Business?</h2>
+            <p className="text-white/70 text-sm md:text-base mt-2 max-w-xl">Tell us about your hiring or business requirements. Our team will work with you to understand your needs and recommend the right solution.</p>
+          </div>
           <Button href="/contact" variant="secondary" size="lg">Get In Touch</Button>
         </div>
       </div>

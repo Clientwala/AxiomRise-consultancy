@@ -19,7 +19,7 @@ const navLinks = [
       { label: "Temporary Staffing", href: "/services/temporary-staffing" },
       { label: "Contract Staffing", href: "/services/contract-staffing" },
       { label: "Executive Search", href: "/services/executive-search" },
-      { label: "Call Centre Staffing", href: "/services/call-centre-staffing" },
+      { label: "Customer Service & Contact Centre Staffing", href: "/services/call-centre-staffing" },
     ],
   },
   { label: "About Us", href: "/about" },

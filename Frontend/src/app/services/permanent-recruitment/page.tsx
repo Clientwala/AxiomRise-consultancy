@@ -11,12 +11,11 @@ export default function PermanentRecruitmentPage() {
     <ServiceDetail
       eyebrow="Talent Solutions"
       title="Permanent Recruitment"
-      subtitle="End-to-end talent acquisition for permanent, mid-to-senior level roles across industries and disciplines."
+      subtitle="We help businesses identify and hire the right professionals for permanent positions across a wide range of industries and functions."
       image="/images/services/permanent-recruitment.jpg"
       imageAlt="Permanent recruitment interview"
       intro={[
-        "Finding the right permanent hire is a strategic decision — not just a vacancy to fill. Axiom Rise partners with organizations to source, assess, and secure professionals who will drive long-term value.",
-        "We combine deep market intelligence with a rigorous screening process to present a curated shortlist of candidates who align with your culture, competencies, and growth ambitions.",
+        "From specialist professionals to mid- and senior-level talent, our recruitment team combines targeted sourcing, industry networks, candidate assessment, and market knowledge to deliver suitable candidates for your business needs.",
       ]}
       features={[
         { title: "Role Profiling", desc: "We define success criteria, competencies, and cultural fit before the search begins." },
