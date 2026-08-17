@@ -46,3 +46,6 @@ Frontend/Asset/
 
 # Misc
 *.log
+
+# Temp extraction files
+client-review*.txt
