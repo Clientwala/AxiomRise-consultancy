@@ -13,12 +13,12 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left Content */}
           <div>
-            <motion.p custom={0} initial="hidden" animate="visible" variants={fadeUp} className="eyebrow">Employment &amp; Management Consultancy</motion.p>
+            <motion.p custom={0} initial="hidden" animate="visible" variants={fadeUp} className="eyebrow">Employment Agency &amp; Management Consultancy</motion.p>
             <motion.h1 custom={1} initial="hidden" animate="visible" variants={fadeUp} className="font-serif text-4xl md:text-5xl lg:text-[3.4rem] text-primary leading-[1.12] tracking-tight">
-              Strategy, People &amp;<br /><span className="text-accent">Business Transformation</span>
+              Strategy, People &amp;<br /><span className="text-accent">Business Growth</span>
             </motion.h1>
             <motion.p custom={2} initial="hidden" animate="visible" variants={fadeUp} className="text-muted text-base md:text-lg mt-6 max-w-lg leading-relaxed">
-              A Singapore-incorporated employment agency and management consultancy — connecting exceptional professionals with leading organizations to accelerate sustainable growth.
+              A Singapore-incorporated employment agency and management consultancy firm — connecting exceptional professionals with leading organizations to accelerate sustainable growth.
             </motion.p>
             <motion.div custom={3} initial="hidden" animate="visible" variants={fadeUp} className="flex flex-wrap gap-4 mt-8">
               <Button href="/services" variant="primary" size="lg">Explore Services</Button>
