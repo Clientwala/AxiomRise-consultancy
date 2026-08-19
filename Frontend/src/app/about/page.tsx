@@ -51,7 +51,7 @@ export default function AboutPage() {
             <div>
               <SectionHeading eyebrow="Who We Are" title="Advisory Excellence for Business Growth" />
               <p className="text-muted leading-relaxed mb-4">
-                Axiom Rise Pte. Ltd. is a Singapore-incorporated employment agency and management consultancy firm. We work at the intersection of people, strategy, and business transformation — helping organizations navigate complex challenges, unlock opportunities, and build lasting competitive advantage.
+                Axiom Rise consultancy Pte. Ltd. is a Singapore-incorporated employment agency and management consultancy firm. We work at the intersection of people, strategy, and business transformation — helping organizations navigate complex challenges, unlock opportunities, and build lasting competitive advantage.
               </p>
               <p className="text-muted leading-relaxed mb-6">
                 We connect exceptional professionals with leading organizations to deliver strategic expertise, strengthen leadership capabilities, and accelerate sustainable business growth. Our portfolio spans management consultancy, corporate services — including incorporation, secretarial, payroll administration, accounting and compliance — alongside executive search and specialist staffing.
