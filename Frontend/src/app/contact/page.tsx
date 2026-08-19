@@ -54,7 +54,7 @@ export default function ContactPage() {
                   <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center shrink-0"><HiClock className="text-accent text-lg" /></div>
                   <div>
                     <h4 className="font-semibold text-primary text-sm mb-1">Business Hours</h4>
-                    <p className="text-muted text-sm">Monday – Friday: 9:00 AM – 6:00 PM SGT<br />[NEEDS CLIENT INPUT]</p>
+                    <p className="text-muted text-sm">Monday – Friday: 9:00 AM – 6:00 PM SGT </p>
                   </div>
                 </div>
                 <div className="border-t border-border pt-6 mt-6">
